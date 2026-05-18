@@ -54,7 +54,7 @@ export default function ExportCard({ courseTitle, courseId }: ShareCardProps) {
               className="text-center text-[9.5px] text-[rgba(117,117,117,0.7)]"
               style={{ fontFamily: pretendard }}
             >
-              링크를 복사해서 자유롭게 공유해보세요!
+              추천코스를 공유해보세요.
             </p>
           </div>
         </div>

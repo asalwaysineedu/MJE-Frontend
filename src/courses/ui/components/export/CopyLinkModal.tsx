@@ -60,9 +60,14 @@ export default function ExportEmailModal({
 
         <div className="flex flex-col items-center gap-[28px]">
           {/* 코스 이름 */}
-          <p className="text-[22px] font-semibold leading-snug text-[#2a4874] text-center">
-            &lsquo;&nbsp;{courseTitle}&nbsp;&rsquo;
-          </p>
+          <div className="flex flex-col items-center gap-[8px] text-center">
+            <p className="text-[22px] font-semibold leading-snug text-[#2a4874]">
+              &lsquo;&nbsp;{courseTitle}&nbsp;&rsquo;
+            </p>
+            <p className="text-[13px] text-[#9a9a9a]" style={{ fontFamily: pretendard }}>
+              추천코스를 자유롭게 공유해보세요!
+            </p>
+          </div>
 
           {/* Shareable URL */}
           <div className="w-full rounded-[12px] bg-[#f4f6f8] px-[14px] py-[10px]">
