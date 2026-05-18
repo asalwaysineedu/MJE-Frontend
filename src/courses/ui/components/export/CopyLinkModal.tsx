@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { trackCloseClick } from "./event_tracking";
+import { trackCloseClick, trackCopyLinkClick } from "./event_tracking";
 
 const pretendard = "'Pretendard Variable', Pretendard, sans-serif";
 
@@ -22,6 +22,7 @@ export default function ExportEmailModal({
   const shareUrl = typeof window !== "undefined" ? window.location.href : "";
 
   const handleCopyUrl = () => {
+    void trackCopyLinkClick(courseId, courseTitle);
     void navigator.clipboard.writeText(shareUrl).then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);

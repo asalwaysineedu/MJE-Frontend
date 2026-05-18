@@ -7,6 +7,7 @@ export const COURSE_EXPORT_EVENT_NAME = "course_export" as const;
 export const COURSE_SEND_EVENT_NAME = "course_send" as const;
 export const EXPORT_CLOSE_EVENT_NAME = "export_close" as const;
 export const COURSE_SHARE_EVENT_NAME = "course_share" as const;
+export const COPY_LINK_EVENT_NAME = "copy_link" as const;
 
 export type CoursesEventName =
   | typeof COURSE_CREATE_EVENT_NAME
@@ -17,7 +18,8 @@ export type CoursesEventName =
   | typeof COURSE_EXPORT_EVENT_NAME
   | typeof COURSE_SEND_EVENT_NAME
   | typeof EXPORT_CLOSE_EVENT_NAME
-  | typeof COURSE_SHARE_EVENT_NAME;
+  | typeof COURSE_SHARE_EVENT_NAME
+  | typeof COPY_LINK_EVENT_NAME;
 
 export interface CourseCreateEvent {
   event_name: typeof COURSE_CREATE_EVENT_NAME;
@@ -93,6 +95,16 @@ export interface ExportCloseEvent {
 
 export interface CourseShareEvent {
   event_name: typeof COURSE_SHARE_EVENT_NAME;
+  session_id: string | null;
+  timestamp: string;
+  page_path: string;
+  course_id: string;
+  course_title: string;
+  [key: string]: unknown;
+}
+
+export interface CopyLinkEvent {
+  event_name: typeof COPY_LINK_EVENT_NAME;
   session_id: string | null;
   timestamp: string;
   page_path: string;

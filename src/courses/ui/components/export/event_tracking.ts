@@ -1,8 +1,8 @@
 import { trackEvent, getSessionId, EventTrackingError } from "@/infrastructure/analytics";
-import { COURSE_EXPORT_EVENT_NAME, COURSE_SEND_EVENT_NAME, EXPORT_CLOSE_EVENT_NAME, COURSE_SHARE_EVENT_NAME } from "@/courses/types/events";
-import type { CourseExportEvent, CourseSendEvent, ExportCloseEvent, CourseShareEvent } from "@/courses/types/events";
+import { COURSE_EXPORT_EVENT_NAME, COURSE_SEND_EVENT_NAME, EXPORT_CLOSE_EVENT_NAME, COURSE_SHARE_EVENT_NAME, COPY_LINK_EVENT_NAME } from "@/courses/types/events";
+import type { CourseExportEvent, CourseSendEvent, ExportCloseEvent, CourseShareEvent, CopyLinkEvent } from "@/courses/types/events";
 
-export { COURSE_EXPORT_EVENT_NAME, COURSE_SEND_EVENT_NAME, EXPORT_CLOSE_EVENT_NAME, COURSE_SHARE_EVENT_NAME };
+export { COURSE_EXPORT_EVENT_NAME, COURSE_SEND_EVENT_NAME, EXPORT_CLOSE_EVENT_NAME, COURSE_SHARE_EVENT_NAME, COPY_LINK_EVENT_NAME };
 
 export function buildCourseExportEvent(
   courseId: string,
@@ -125,6 +125,38 @@ export async function trackShareClick(
     if (error instanceof EventTrackingError) {
       console.error(
         "[ShareTracking] course_share 전송 실패:",
+        error.message,
+        error.cause,
+      );
+    }
+  }
+}
+
+export function buildCopyLinkEvent(
+  courseId: string,
+  courseTitle: string,
+): CopyLinkEvent {
+  return {
+    event_name: COPY_LINK_EVENT_NAME,
+    session_id: getSessionId(),
+    timestamp: new Date().toISOString(),
+    page_path: typeof window !== "undefined" ? window.location.pathname : "",
+    course_id: courseId,
+    course_title: courseTitle,
+  };
+}
+
+export async function trackCopyLinkClick(
+  courseId: string,
+  courseTitle: string,
+): Promise<void> {
+  const event = buildCopyLinkEvent(courseId, courseTitle);
+  try {
+    await trackEvent(event, "/export-logs");
+  } catch (error) {
+    if (error instanceof EventTrackingError) {
+      console.error(
+        "[ShareTracking] copy_link 전송 실패:",
         error.message,
         error.cause,
       );
