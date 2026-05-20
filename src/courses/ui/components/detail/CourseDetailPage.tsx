@@ -20,6 +20,7 @@ import HeadlineStartTime from "@/courses/ui/components/headline_start_time/Headl
 import HeadlineCourseTitle from "@/courses/ui/components/headline_course_title/HeadlineCourseTitle";
 import HeadlineCourseExplain from "@/courses/ui/components/headline_course_explain/HeadlineCourseExplain";
 import { CourseType } from "@/courses/ui/components/shared/CourseLabel";
+import { generateCourseTitle } from "@/courses/ui/utils/generateCourseTitle";
 
 function gradeToLabel(grade?: string): CourseType {
   if (grade === "optional_a") return "Option A";
@@ -125,6 +126,14 @@ export default function CourseDetailPage({
       : fallbackAlternatives.filter((course) => course.id !== courseId).slice(0, 2);
   const safeAlternatives = alternatives
     .filter((course) => course.name)
+    .map((course) => {
+      const sessionCourse = allCourses.find((c) => c.id === course.id);
+      if (!sessionCourse?.places?.length) return course;
+      const generatedName =
+        generateCourseTitle(sessionCourse.places, sessionCourse.courseType ?? course.courseType) ||
+        course.name;
+      return { ...course, name: generatedName };
+    })
     .sort((a, b) => {
       const aIsBest = (a.courseType ?? "").toUpperCase() === "BEST";
       const bIsBest = (b.courseType ?? "").toUpperCase() === "BEST";
@@ -167,7 +176,7 @@ export default function CourseDetailPage({
             <HeadlineStartTime time={selectedCourse.startTime} />
           )}
         </div>
-        <HeadlineCourseTitle title={selectedCourse.name} />
+        <HeadlineCourseTitle title={generateCourseTitle(selectedCourse.places, grade) || selectedCourse.name} />
         <HeadlineCourseExplain description={selectedCourse.description} />
       </div>
 

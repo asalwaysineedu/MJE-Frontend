@@ -2,6 +2,7 @@
 
 import { RecommendationCourseItem } from "@/recommendation/types";
 import { getRandomCoupleImage } from "@/recommendation/ui/utils/coupleImages";
+import { generateCourseTitle } from "@/courses/ui/utils/generateCourseTitle";
 
 interface OptionalCourseCardProps {
   course: RecommendationCourseItem;
@@ -36,7 +37,7 @@ function toOptionalCourseDisplay(
     label: `Course ${String.fromCharCode(65 + index)}`,
     locationGu: gu,
     locationDong: dong,
-    title: `${second?.name ?? ""} 코스`,
+    title: generateCourseTitle(course.places, "optional"),
     description:
       `${second?.name ?? ""}에서 여유롭게 시작해,\n` +
       `${first?.name ?? ""}을 거쳐 ${third?.name ?? ""}로\n` +

@@ -2,6 +2,7 @@
 
 import { RecommendationCourseItem } from "@/recommendation/types";
 import { getRandomCoupleImage } from "@/recommendation/ui/utils/coupleImages";
+import { generateCourseTitle } from "@/courses/ui/utils/generateCourseTitle";
 
 interface BestCourseCardProps {
   course: RecommendationCourseItem;
@@ -30,7 +31,7 @@ function toBestCourseDisplay(course: RecommendationCourseItem): BestCourseDispla
     imageUrl: course.image_url ?? getRandomCoupleImage(course.course_id),
     locationGu: gu,
     locationDong: dong,
-    title: `${first?.name ?? ""} 코스`,
+    title: generateCourseTitle(course.places, "best"),
     description:
       `${first?.name ?? ""}에서 출발해 ${third?.name ?? ""}까지 이어지는,\n` +
       `${second?.category ?? ""}을 즐기기 좋은 데이트 코스`,
