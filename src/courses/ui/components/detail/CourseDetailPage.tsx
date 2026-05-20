@@ -68,7 +68,6 @@ export default function CourseDetailPage({
     [selectedCourse?.keywords],
   );
 
-
   const labelToGrade: Record<CourseType, string> = {
     "Best Course !": "best",
     "Option A": "optional_a",
@@ -148,6 +147,7 @@ export default function CourseDetailPage({
     });
 
   const alternativeLabels: CourseType[] = useMemo(() => {
+    if (!safeAlternatives) return [];
     let optionalIndex = 0;
     return safeAlternatives.map((course) => {
       const t = (course.courseType ?? "").toUpperCase().replace(/[-\s]/g, "_");
@@ -162,6 +162,44 @@ export default function CourseDetailPage({
       return "Best Course !";
     });
   }, [safeAlternatives, grade]);
+
+  const labelToGrade: Record<CourseType, string> = {
+    "Best Course !": "best",
+    "Option A": "optional_a",
+    "Option B": "optional_b",
+  };
+
+  const handleOtherCourseClick = (course: Course, label: CourseType) => {
+    if (!course.id) return;
+    trackOptionCardClick();
+    router.push(`/courses/detail/${course.id}?grade=${labelToGrade[label]}`);
+  };
+
+  if (isSessionLoading && !initialDetailData) {
+    return <DetailCourseSkeleton />;
+  }
+
+  if (!selectedCourse) {
+    return (
+      <div className="flex flex-col items-center justify-center py-16 text-center">
+        <p className="text-base text-brand-text-gray">코스 상세 정보를 불러올 수 없어요.</p>
+        <p className="mt-1 text-sm text-brand-text-muted">다시 시도해 주세요.</p>
+      </div>
+    );
+  }
+
+  const places = selectedCourse.places ?? [];
+
+  const transportLabelMap: Record<string, string> = {
+    walk: "도보",
+    public_transit: "대중교통",
+    transit: "대중교통",
+    car: "자동차",
+  };
+  const resolvedTransport = selectedCourse.transport ?? sessionTransport;
+  const transportLabel = resolvedTransport
+    ? (transportLabelMap[resolvedTransport] ?? resolvedTransport)
+    : undefined;
 
   const locations =
     selectedCourse.locations ??
