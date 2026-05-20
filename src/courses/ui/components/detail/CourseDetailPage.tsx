@@ -58,6 +58,16 @@ export default function CourseDetailPage({
     [selectedCourse?.keywords],
   );
 
+  const sessionTransport = useMemo(() => {
+    const session = loadCourseSession();
+    if (!session) return undefined;
+    const course =
+      session.mainCourse?.courseId === courseId
+        ? session.mainCourse
+        : session.subCourses.find((c) => c.courseId === courseId);
+    return course?.transport;
+  }, [courseId]);
+
   const handleOtherCourseClick = (course: Course) => {
     if (!course.id) {
       return;
@@ -88,15 +98,6 @@ export default function CourseDetailPage({
     transit: "대중교통",
     car: "자동차",
   };
-  const sessionTransport = useMemo(() => {
-    const session = loadCourseSession();
-    if (!session) return undefined;
-    const course =
-      session.mainCourse?.courseId === courseId
-        ? session.mainCourse
-        : session.subCourses.find((c) => c.courseId === courseId);
-    return course?.transport;
-  }, [courseId]);
   const resolvedTransport = selectedCourse.transport ?? sessionTransport;
   const transportLabel = resolvedTransport
     ? (transportLabelMap[resolvedTransport] ?? resolvedTransport)
