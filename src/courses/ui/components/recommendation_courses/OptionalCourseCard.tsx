@@ -33,7 +33,7 @@ function toOptionalCourseDisplay(
   const { gu, dong } = extractAreaParts(second?.address ?? "");
   return {
     imageUrl: course.image_url ?? getRandomCoupleImage(`${course.course_id}-${index}`),
-    label: `Option ${String.fromCharCode(65 + index)}`,
+    label: `Course ${String.fromCharCode(65 + index)}`,
     locationGu: gu,
     locationDong: dong,
     title: `${second?.name ?? ""} 코스`,
@@ -83,8 +83,8 @@ export default function OptionalCourseCard({ course, index, onDetailClick }: Opt
           style={{ minHeight: "196px", maxHeight: "265px" }}
         />
         {/* Label badge + arrow button overlay */}
-        <div className="absolute left-[20px] top-[20px] md:left-[28px] md:top-[25px] flex w-[135px] md:w-[187px] items-center justify-between">
-          <div className="rounded-full bg-white px-[10px] md:px-[13px] py-[4px] text-[12px] text-black shadow-sm">
+        <div className="absolute left-[20px] top-[20px] md:left-[28px] md:top-[25px] flex w-[135px] md:w-[187px] items-start justify-between">
+          <div className="rounded-full bg-[#E5EAEE] px-[10px] md:px-[13px] py-[4px] text-[12px] text-black shadow-sm">
             {display.label}
           </div>
           <button

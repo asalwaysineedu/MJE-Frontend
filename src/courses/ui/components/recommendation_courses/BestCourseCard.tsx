@@ -82,7 +82,7 @@ export default function BestCourseCard({ course, onDetailClick }: BestCourseCard
           className="text-[12px] text-black"
           style={{ fontFamily: "'Prompt', sans-serif" }}
         >
-          Best Course !
+          Today Pick!
         </span>
       </div>
 
