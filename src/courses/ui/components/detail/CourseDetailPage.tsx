@@ -23,11 +23,13 @@ import HeadlineCourseExplain from "@/courses/ui/components/headline_course_expla
 interface CourseDetailPageProps {
     courseId: string;
     initialDetailData: CourseDetailData | null;
+    grade?: string;
 }
 
 export default function CourseDetailPage({
                                              courseId,
                                              initialDetailData,
+                                             grade,
                                          }: CourseDetailPageProps) {
     const { data, isLoading: isSessionLoading } = useSuggestedCourses();
     const { courses: otherCourses } = useOtherCourses(courseId);
