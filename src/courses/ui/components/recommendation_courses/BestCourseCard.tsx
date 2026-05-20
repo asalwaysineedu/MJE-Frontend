@@ -79,7 +79,7 @@ export default function BestCourseCard({ course, onDetailClick }: BestCourseCard
       {/* Best Course badge overlaid on image */}
       <div className="absolute left-[18px] top-[18px] md:left-[26px] md:top-[26px] flex items-center justify-center rounded-full bg-[#d5e6f6] px-[13px] py-[5px]">
         <span
-          className="text-[12px] text-black"
+          className="text-[12px] text-black font-medium"
           style={{ fontFamily: "'Prompt', sans-serif" }}
         >
           Today Pick!
