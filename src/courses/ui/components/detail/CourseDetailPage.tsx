@@ -209,7 +209,7 @@ export default function CourseDetailPage({
                     {safeAlternatives.length > 0 && (
                         <div className="flex flex-col gap-3">
                             <div className="flex justify-center">
-                <span className="rounded-full bg-brand-navy px-3 py-1 text-[11px] font-semibold text-white">
+                <span className="rounded-full bg-[#333333] px-3 py-1 text-[11px] font-semibold text-white">
                   다른 추천 코스!
                 </span>
                             </div>
@@ -235,7 +235,7 @@ export default function CourseDetailPage({
                 {safeAlternatives.length > 0 && (
                     <div className="flex flex-col gap-3">
                         <div className="flex justify-center">
-              <span className="rounded-full bg-brand-navy px-3 py-1 text-[11px] font-semibold text-white">
+              <span className="rounded-full bg-[#333333] px-3 py-1 text-[11px] font-semibold text-white">
                 다른 추천 코스!
               </span>
                         </div>
