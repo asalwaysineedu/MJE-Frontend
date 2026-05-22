@@ -26,12 +26,14 @@ interface CourseDetailPageProps {
     courseId: string;
     initialDetailData: CourseDetailData | null;
     grade?: string;
+    isSharedView?: boolean;
 }
 
 export default function CourseDetailPage({
                                              courseId,
                                              initialDetailData,
                                              grade,
+                                             isSharedView = false,
                                          }: CourseDetailPageProps) {
     const { data, isLoading: isSessionLoading } = useSuggestedCourses();
     const { courses: otherCourses } = useOtherCourses(courseId);
@@ -143,6 +145,69 @@ export default function CourseDetailPage({
         (selectedCourse.location ? [selectedCourse.location] : []);
     const headlineLocation = locations[0];
 
+    const scheduleCard = (
+        <div className="flex flex-col gap-3 rounded-[30px] bg-white px-[17px] pb-[19px] pt-[22px] shadow-[0px_8px_32px_rgba(42,72,116,0.12)]">
+            <div className="flex flex-col gap-[10px]">
+                <BestCourseLabel label={labelFromCourseType(grade ?? selectedCourse.courseType)} />
+                <div className="flex items-baseline gap-[8px]">
+                    <span className="text-[18px] font-bold text-black">상세 일정</span>
+                    {selectedCourse.duration && (
+                        <div className="flex items-center gap-[5px] text-[12px] text-[#959595]">
+                            <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
+                                <circle cx="8" cy="8" r="7" stroke="#959595" strokeWidth="1.5" />
+                                <path d="M8 5V9L10.5 10.5" stroke="#959595" strokeWidth="1.5" strokeLinecap="round" />
+                            </svg>
+                            <span>{selectedCourse.duration}</span>
+                        </div>
+                    )}
+                </div>
+            </div>
+
+            {places.length > 0 ? (
+                <div className="flex flex-col gap-1.5">
+                    {places.map((place, index) => (
+                        <div key={place.id} className="flex flex-col">
+                            <ScheduleCard
+                                place={place}
+                                previousPlaceName={index > 0 ? places[index - 1].name : undefined}
+                                walkingTimeFromPrevious={index > 0 ? places[index - 1].walkingTimeTo : undefined}
+                                transportLabel={transportLabel}
+                            />
+                            {index < places.length - 1 && (
+                                <ScheduleTimelineConnector />
+                            )}
+                        </div>
+                    ))}
+                </div>
+            ) : (
+                <p className="text-[12px] text-brand-text-muted">
+                    상세 일정 정보가 없어요.
+                </p>
+            )}
+        </div>
+    );
+
+    if (isSharedView) {
+        return (
+            <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-[10px]">
+                    <div className="flex flex-wrap items-center gap-[18px]">
+                        {headlineLocation && <HeadlineLocation location={headlineLocation} />}
+                        {headlineLocation && selectedCourse.startTime && (
+                            <span className="inline-block h-[2.5px] w-[2.5px] shrink-0 rounded-full bg-[#C0C0C0]" />
+                        )}
+                        {selectedCourse.startTime && (
+                            <HeadlineStartTime time={selectedCourse.startTime} />
+                        )}
+                    </div>
+                    <HeadlineCourseTitle title={generateCourseTitle(selectedCourse.places, selectedCourse.courseType) || selectedCourse.name} />
+                    <HeadlineCourseExplain description={selectedCourse.description} />
+                </div>
+                {scheduleCard}
+            </div>
+        );
+    }
+
     return (
         <div className="flex flex-col gap-6">
             <ReturnToRecommendation />
@@ -162,46 +227,7 @@ export default function CourseDetailPage({
 
             {/* ── 메인 그리드: mobile = 1열(일정만), lg+ = 1fr/250px ── */}
             <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-[1fr_250px]">
-                {/* 상세 일정 카드 */}
-                <div className="flex flex-col gap-3 rounded-[30px] bg-white px-[17px] pb-[19px] pt-[22px] shadow-[0px_8px_32px_rgba(42,72,116,0.12)]">
-                    <div className="flex flex-col gap-[10px]">
-                        <BestCourseLabel label={labelFromCourseType(grade ?? selectedCourse.courseType)} />
-                        <div className="flex items-baseline gap-[8px]">
-                            <span className="text-[18px] font-bold text-black">상세 일정</span>
-                            {selectedCourse.duration && (
-                                <div className="flex items-center gap-[5px] text-[12px] text-[#959595]">
-                                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none">
-                                        <circle cx="8" cy="8" r="7" stroke="#959595" strokeWidth="1.5" />
-                                        <path d="M8 5V9L10.5 10.5" stroke="#959595" strokeWidth="1.5" strokeLinecap="round" />
-                                    </svg>
-                                    <span>{selectedCourse.duration}</span>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-
-                    {places.length > 0 ? (
-                        <div className="flex flex-col gap-1.5">
-                            {places.map((place, index) => (
-                                <div key={place.id} className="flex flex-col">
-                                    <ScheduleCard
-                                        place={place}
-                                        previousPlaceName={index > 0 ? places[index - 1].name : undefined}
-                                        walkingTimeFromPrevious={index > 0 ? places[index - 1].walkingTimeTo : undefined}
-                                        transportLabel={transportLabel}
-                                    />
-                                    {index < places.length - 1 && (
-                                        <ScheduleTimelineConnector />
-                                    )}
-                                </div>
-                            ))}
-                        </div>
-                    ) : (
-                        <p className="text-[12px] text-brand-text-muted">
-                            상세 일정 정보가 없어요.
-                        </p>
-                    )}
-                </div>
+                {scheduleCard}
 
                 {/* 데스크탑 사이드바 — lg+ 에서만 노출 */}
                 <div className="hidden lg:flex flex-col gap-[40px]">
@@ -209,9 +235,9 @@ export default function CourseDetailPage({
                     {safeAlternatives.length > 0 && (
                         <div className="flex flex-col gap-3">
                             <div className="flex justify-center">
-                <span className="rounded-full bg-[#333333] px-3 py-1 text-[11px] font-semibold text-white">
-                  다른 추천 코스!
-                </span>
+                                <span className="rounded-full bg-[#333333] px-3 py-1 text-[11px] font-semibold text-white">
+                                    다른 추천 코스!
+                                </span>
                             </div>
                             <div className="flex flex-col gap-3">
                                 {safeAlternatives.map((course, index) => (
@@ -235,9 +261,9 @@ export default function CourseDetailPage({
                 {safeAlternatives.length > 0 && (
                     <div className="flex flex-col gap-3">
                         <div className="flex justify-center">
-              <span className="rounded-full bg-[#333333] px-3 py-1 text-[11px] font-semibold text-white">
-                다른 추천 코스!
-              </span>
+                            <span className="rounded-full bg-[#333333] px-3 py-1 text-[11px] font-semibold text-white">
+                                다른 추천 코스!
+                            </span>
                         </div>
                         <div className="grid grid-cols-2 gap-3">
                             {safeAlternatives.map((course, index) => (
@@ -260,12 +286,11 @@ export default function CourseDetailPage({
                             key={keyword.label}
                             className="rounded-full bg-brand-blue-light px-3 py-1 text-[11px] text-[#2A4874]"
                         >
-              {keyword.label}
-            </span>
+                            {keyword.label}
+                        </span>
                     ))}
                 </div>
             )}
-
         </div>
     );
 }

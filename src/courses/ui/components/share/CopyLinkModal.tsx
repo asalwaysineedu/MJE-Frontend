@@ -19,7 +19,12 @@ export default function CopyLinkModal({
   const [copied, setCopied] = useState(false);
   const overlayRef = useRef<HTMLDivElement>(null);
 
-  const shareUrl = typeof window !== "undefined" ? window.location.href : "";
+  const shareUrl = (() => {
+    if (typeof window === "undefined") return "";
+    const url = new URL(window.location.href);
+    url.searchParams.set("shared", "true");
+    return url.toString();
+  })();
 
   const handleCopyUrl = () => {
     void trackCopyLinkClick(courseId, courseTitle);

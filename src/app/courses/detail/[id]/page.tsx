@@ -6,10 +6,11 @@ export default async function Page({
   searchParams,
 }: {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ grade?: string }>;
+  searchParams: Promise<{ grade?: string; shared?: string }>;
 }) {
   const { id } = await params;
-  const { grade } = await searchParams;
+  const { grade, shared } = await searchParams;
+  const isSharedView = shared === "true";
   const detailData = await fetchCourseDetail(id);
 
   return (
@@ -19,7 +20,7 @@ export default async function Page({
       {/* 분홍빛 블롭 */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 h-[850px] w-[850px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#f0d5d5] opacity-50 blur-[180px]" />
       <div className="relative z-10 mx-auto max-w-[1100px] px-4 md:px-8 lg:px-10 py-8 md:py-[60px]">
-        <CourseDetailPage courseId={id} initialDetailData={detailData} grade={grade} />
+        <CourseDetailPage courseId={id} initialDetailData={detailData} grade={grade} isSharedView={isSharedView} />
       </div>
     </main>
   );
