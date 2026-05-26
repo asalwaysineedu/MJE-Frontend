@@ -15,6 +15,9 @@ interface KakaoLatLngBounds {
 interface KakaoCustomOverlay {
   setMap(map: KakaoMap | null): void;
 }
+interface KakaoPolyline {
+  setMap(map: KakaoMap | null): void;
+}
 interface KakaoMap {
   setBounds(bounds: KakaoLatLngBounds): void;
   setCenter(latlng: KakaoLatLng): void;
@@ -37,6 +40,13 @@ interface KakaoMaps {
   }) => KakaoCustomOverlay;
   LatLng: new (lat: number, lng: number) => KakaoLatLng;
   LatLngBounds: new () => KakaoLatLngBounds;
+  Polyline: new (opts: {
+    path: KakaoLatLng[];
+    strokeWeight?: number;
+    strokeColor?: string;
+    strokeOpacity?: number;
+    strokeStyle?: string;
+  }) => KakaoPolyline;
   load(cb: () => void): void;
   services: { Geocoder: new () => KakaoGeocoder; Status: { OK: string } };
 }
@@ -50,12 +60,17 @@ declare global {
 const MAP_KEY = process.env.NEXT_PUBLIC_KAKAO_MAP_KEY ?? "";
 const SCRIPT_ID = "kakao-map-sdk";
 const SINGLE_MARKER_ZOOM = 5;
+const SEGMENT_COLORS = ["#2A4874"];
+const POLYLINE_WEIGHT = 3;
+const POLYLINE_OPACITY = 1;
+const POLYLINE_STYLE = "solid";
 
 type Status = "loading" | "ready" | "error";
 
 interface CourseMapProps {
   places: Place[];
 }
+
 
 function markerContent(order: number, name: string): string {
   const color = "#F1354D";
@@ -69,6 +84,48 @@ function markerContent(order: number, name: string): string {
       <path d="M14 20C14 20 6.5 15.5 6.5 10.5C6.5 8 8.5 6.5 11 6.5C12.5 6.5 13.5 7.3 14 7.8C14.5 7.3 15.5 6.5 17 6.5C19.5 6.5 21.5 8 21.5 10.5C21.5 15.5 14 20 14 20Z" fill="#fff"/>
     </svg>
   </div>`;
+}
+
+async function fetchOsrmRoute(
+  fromLat: number,
+  fromLng: number,
+  toLat: number,
+  toLng: number,
+): Promise<Array<[number, number]> | null> {
+  try {
+    const url = `https://router.project-osrm.org/route/v1/foot/${fromLng},${fromLat};${toLng},${toLat}?overview=full&geometries=geojson`;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (data.code === "Ok" && data.routes?.[0]?.geometry?.coordinates) {
+      return data.routes[0].geometry.coordinates as Array<[number, number]>;
+    }
+  } catch {
+    // fall back to direct line
+  }
+  return null;
+}
+
+function geocodeAll(
+  geocoder: KakaoGeocoder,
+  maps: KakaoMaps,
+  entries: Array<{ addr: string; place: Place; sortedIndex: number }>,
+): Promise<Array<{ pos: KakaoLatLng; place: Place; sortedIndex: number }>> {
+  return Promise.all(
+    entries.map(({ addr, place, sortedIndex }) =>
+      new Promise<{ pos: KakaoLatLng; place: Place; sortedIndex: number } | null>(resolve => {
+        geocoder.addressSearch(addr, (result, s) => {
+          if (s === maps.services.Status.OK && result[0]) {
+            resolve({ pos: new maps.LatLng(+result[0].y, +result[0].x), place, sortedIndex });
+          } else {
+            resolve(null);
+          }
+        });
+      }),
+    ),
+  ).then(results =>
+    results.filter((r): r is { pos: KakaoLatLng; place: Place; sortedIndex: number } => r !== null),
+  );
 }
 
 export default function CourseMap({ places }: CourseMapProps) {
@@ -85,8 +142,9 @@ export default function CourseMap({ places }: CourseMapProps) {
 
     let cancelled = false;
     const overlays: KakaoCustomOverlay[] = [];
+    const polylines: KakaoPolyline[] = [];
 
-    function applyBounds(
+    async function applyBounds(
       maps: KakaoMaps,
       map: KakaoMap,
       positions: Array<{ pos: KakaoLatLng; place: Place; sortedIndex: number }>,
@@ -95,13 +153,37 @@ export default function CourseMap({ places }: CourseMapProps) {
         const overlay = new maps.CustomOverlay({
           position: pos,
           content: markerContent(sortedIndex + 1, place.name),
-          yAnchor: 0.5,
+          yAnchor: 1,
           xAnchor: 0.5,
           zIndex: 3,
         });
         overlay.setMap(map);
         overlays.push(overlay);
       });
+
+      if (positions.length >= 2) {
+        for (let i = 0; i < positions.length - 1; i++) {
+          if (cancelled) return;
+          const from = positions[i].pos;
+          const to = positions[i + 1].pos;
+          const coords = await fetchOsrmRoute(from.getLat(), from.getLng(), to.getLat(), to.getLng());
+          if (cancelled) return;
+          const path = coords
+            ? coords.map(([lng, lat]) => new maps.LatLng(lat, lng))
+            : [from, to];
+          const color = SEGMENT_COLORS[i] ?? SEGMENT_COLORS[SEGMENT_COLORS.length - 1];
+
+          const polyline = new maps.Polyline({
+            path,
+            strokeWeight: POLYLINE_WEIGHT,
+            strokeColor: color,
+            strokeOpacity: POLYLINE_OPACITY,
+            strokeStyle: POLYLINE_STYLE,
+          });
+          polyline.setMap(map);
+          polylines.push(polyline);
+        }
+      }
 
       if (positions.length === 1) {
         map.setCenter(positions[0].pos);
@@ -113,12 +195,11 @@ export default function CourseMap({ places }: CourseMapProps) {
       }
     }
 
-    function renderMarkers(maps: KakaoMaps, map: KakaoMap) {
+    async function renderMarkers(maps: KakaoMaps, map: KakaoMap) {
       if (cancelled) return;
 
       const sorted = sortPlacesByOrder(places);
 
-      // lat/lng 직접 사용 경로
       const withCoords = sorted
         .map((place, sortedIndex) => ({ place, sortedIndex }))
         .filter(({ place }) => place.latitude != null && place.longitude != null);
@@ -130,13 +211,12 @@ export default function CourseMap({ places }: CourseMapProps) {
           sortedIndex,
         }));
         if (!cancelled) {
-          applyBounds(maps, map, positions);
-          setStatus("ready");
+          await applyBounds(maps, map, positions);
+          if (!cancelled) setStatus("ready");
         }
         return;
       }
 
-      // 주소 geocoding 폴백
       const addressEntries = sorted
         .map((place, sortedIndex) => ({ addr: place.address ?? place.location, place, sortedIndex }))
         .filter((e): e is { addr: string; place: Place; sortedIndex: number } => Boolean(e.addr));
@@ -147,28 +227,15 @@ export default function CourseMap({ places }: CourseMapProps) {
       }
 
       const geocoder = new maps.services.Geocoder();
-      const resolved: Array<{ pos: KakaoLatLng; place: Place; sortedIndex: number }> = [];
-      let remaining = addressEntries.length;
+      const resolved = await geocodeAll(geocoder, maps, addressEntries);
 
-      addressEntries.forEach(({ addr, place, sortedIndex }) => {
-        geocoder.addressSearch(addr, (result, s) => {
-          if (!cancelled && s === maps.services.Status.OK && result[0]) {
-            resolved.push({
-              pos: new maps.LatLng(+result[0].y, +result[0].x),
-              place,
-              sortedIndex,
-            });
-          }
-          remaining -= 1;
-          if (remaining === 0 && !cancelled) {
-            if (resolved.length > 0) {
-              resolved.sort((a, b) => a.sortedIndex - b.sortedIndex);
-              applyBounds(maps, map, resolved);
-            }
-            setStatus("ready");
-          }
-        });
-      });
+      if (!cancelled) {
+        if (resolved.length > 0) {
+          resolved.sort((a, b) => a.sortedIndex - b.sortedIndex);
+          await applyBounds(maps, map, resolved);
+        }
+        if (!cancelled) setStatus("ready");
+      }
     }
 
     function initMap() {
@@ -202,6 +269,7 @@ export default function CourseMap({ places }: CourseMapProps) {
           cancelled = true;
           existing.removeEventListener("load", initMap);
           overlays.forEach((o) => o.setMap(null));
+          polylines.forEach((p) => p.setMap(null));
         };
       }
     } else {
@@ -218,11 +286,12 @@ export default function CourseMap({ places }: CourseMapProps) {
     return () => {
       cancelled = true;
       overlays.forEach((o) => o.setMap(null));
+      polylines.forEach((p) => p.setMap(null));
     };
   }, [places]);
 
   return (
-    <div className="relative h-[200px] w-full rounded-[20px] overflow-hidden">
+    <div className="relative h-[200px] w-full rounded-[20px] overflow-hidden" style={{ opacity: 0.93, border: "1px solid #D4D4D4" }}>
       {status === "loading" && (
         <div className="absolute inset-0">
           <CourseMapSkeleton />
