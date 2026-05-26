@@ -77,6 +77,6 @@ body {
     border-radius: 999px;
   }
   .scrollbar-timepicker::-webkit-scrollbar-thumb:hover {
-    background: #8aaee6; //테스트
+    background: #8aaee6;
   }
 }
