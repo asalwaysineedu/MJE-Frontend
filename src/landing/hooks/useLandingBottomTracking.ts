@@ -17,7 +17,7 @@ export function useLandingBottomTracking() {
       page_path: pathname,
     };
 
-    trackEvent(event).catch((error) => {
+    trackEvent(event, "/landing/events").catch((error) => {
       if (error instanceof EventTrackingError) {
         console.error(
           "[LandingBottomTracking] landing_bottom 전송 실패:",

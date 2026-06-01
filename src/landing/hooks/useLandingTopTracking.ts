@@ -17,7 +17,7 @@ export function useLandingTopTracking() {
       page_path: pathname,
     };
 
-    trackEvent(event).catch((error) => {
+    trackEvent(event, "/landing/events").catch((error) => {
       if (error instanceof EventTrackingError) {
         console.error(
           "[LandingTopTracking] landing_top 전송 실패:",

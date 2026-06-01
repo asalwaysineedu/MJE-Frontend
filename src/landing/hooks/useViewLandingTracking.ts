@@ -21,7 +21,7 @@ export function useViewLandingTracking() {
       referrer: document.referrer || null,
     };
 
-    trackEvent(event).catch((error) => {
+    trackEvent(event, "/landing/events").catch((error) => {
       if (error instanceof EventTrackingError) {
         console.error(
           "[ViewLandingTracking] view_landing 전송 실패:",
