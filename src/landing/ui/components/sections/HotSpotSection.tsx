@@ -1,4 +1,4 @@
-import svgPaths from "@/landing/ui/components/assets/svgPaths";
+﻿import svgPaths from "@/landing/ui/components/assets/svgPaths";
 import {
   imgKakaoMap2,
   imgKakaoMap3,
@@ -29,7 +29,7 @@ function HotSpotLabel() {
           </g>
         </svg>
       </div>
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[266.19px] not-italic text-[16px] text-black top-[2036.3px] whitespace-nowrap">Hot Spot !</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[normal] left-[266.19px] not-italic text-[16px] text-black top-[2036.3px] whitespace-nowrap">Hot Spot !</p>
     </>
   );
 }
@@ -69,13 +69,13 @@ function CourseCardYeonnam() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[24.482px] items-center justify-center left-[90.93px] top-[202.33px] w-[41.619px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">연남동</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">연남동</p>
         </div>
       </div>
       {/* title */}
       <div className="absolute flex h-[98.264px] items-center justify-center left-[62.01px] top-[196.02px] w-[232.239px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`힙스터들의 숨은 아지트, `}</p>
             <p className="leading-[normal] whitespace-pre">연남동 골목 탐방</p>
           </div>
@@ -84,7 +84,7 @@ function CourseCardYeonnam() {
       {/* duration */}
       <div className="absolute flex items-center gap-[10px] left-[77.12px] top-[306.79px]" style={{ transform: "rotate(-11.58deg)", transformOrigin: "left center" }}>
         <div className="size-[14.43px] relative flex-none"><AvgPaceIcon /></div>
-        <p className="font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">4~5시간</p>
+        <p className="font-figma-inter font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">4~5시간</p>
       </div>
       {/* dotted line */}
       <div className="absolute flex h-[49.062px] items-center justify-center left-[112.85px] top-[364.74px] w-[10.052px]">
@@ -99,17 +99,17 @@ function CourseCardYeonnam() {
       {/* spot names */}
       <div className="absolute flex h-[23.254px] items-center justify-center left-[192.6px] top-[318.86px] w-[31.043px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">소점</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">소점</p>
         </div>
       </div>
       <div className="absolute flex h-[28.874px] items-center justify-center left-[200.65px] top-[352.54px] w-[58.473px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">사운즈굿</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">사운즈굿</p>
         </div>
       </div>
       <div className="absolute flex h-[34.294px] items-center justify-center left-[208.6px] top-[385.92px] w-[84.924px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">턴다운서비스</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">턴다운서비스</p>
         </div>
       </div>
       {/* tag pills: 식사, 쇼핑, 카페 */}
@@ -141,7 +141,7 @@ function CardTagPill({ leftBox, topBox, leftText, topText, rotate, boxW, boxH, l
       </div>
       <div className="-translate-x-1/2 absolute flex items-center justify-center" style={{ left: leftText, top: topText, width: 26.723, height: 20.492 }}>
         <div className="flex-none" style={{ transform: `rotate(${rotate})` }}>
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[13px] text-center whitespace-nowrap">{label}</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[13px] text-center whitespace-nowrap">{label}</p>
         </div>
       </div>
     </>
@@ -188,18 +188,18 @@ function CourseCardSeochon() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[20.806px] items-center justify-center left-[84.33px] top-[160.81px] w-[40.501px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">종로구</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">종로구</p>
         </div>
       </div>
       <div className="-translate-x-1/2 absolute flex h-[19.509px] items-center justify-center left-[176.49px] top-[170.7px] w-[27.566px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">서촌</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">서촌</p>
         </div>
       </div>
       {/* title */}
       <div className="absolute flex h-[74.88px] items-center justify-center left-[43.35px] top-[188.21px] w-[216.33px]">
         <div className="flex-none rotate-[5.73deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`이국적인 감성 한 스푼, `}</p>
             <p className="leading-[normal] whitespace-pre">해방촌 비밀 아지트</p>
           </div>
@@ -208,7 +208,7 @@ function CourseCardSeochon() {
       {/* duration */}
       <div className="absolute flex items-center gap-[10px] left-[43.47px] top-[256px]" style={{ transform: "rotate(5.73deg)", transformOrigin: "left center" }}>
         <div className="size-[14.43px] relative flex-none"><AvgPaceIcon /></div>
-        <p className="font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">5~6시간</p>
+        <p className="font-figma-inter font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">5~6시간</p>
       </div>
       {/* dotted line */}
       <div className="absolute flex h-[49.831px] items-center justify-center left-[55.6px] top-[321.1px] w-[4.996px]">
@@ -223,17 +223,17 @@ function CourseCardSeochon() {
       {/* spot names */}
       <div className="absolute flex h-[23.497px] items-center justify-center left-[146.91px] top-[306.39px] w-[57.516px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">칸다소바</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">칸다소바</p>
         </div>
       </div>
       <div className="absolute flex h-[27.986px] items-center justify-center left-[142.91px] top-[346.3px] w-[102.292px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">포뮬라 아뜰리에</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">포뮬라 아뜰리에</p>
         </div>
       </div>
       <div className="absolute flex h-[19.307px] items-center justify-center left-[138.95px] top-[385.71px] w-[15.726px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">참</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">참</p>
         </div>
       </div>
       {/* tag pills */}
@@ -246,7 +246,7 @@ function CourseCardSeochon() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[20.709px] items-center justify-center left-[54.04px] top-[375.71px] w-[49.357px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[13px] text-center whitespace-nowrap">칵테일바</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[13px] text-center whitespace-nowrap">칵테일바</p>
         </div>
       </div>
     </div>
@@ -290,18 +290,18 @@ function CourseCardHaebangchon() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[18.344px] items-center justify-center left-[64.5px] top-[165.86px] w-[39.567px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">용산구</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">용산구</p>
         </div>
       </div>
       <div className="-translate-x-1/2 absolute flex h-[18.344px] items-center justify-center left-[157.57px] top-[162.62px] w-[39.567px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">해방촌</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">해방촌</p>
         </div>
       </div>
       {/* title */}
       <div className="absolute flex h-[61.327px] items-center justify-center left-[31.52px] top-[189.29px] w-[213.747px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`이국적인 감성 한 스푼, `}</p>
             <p className="leading-[normal] whitespace-pre">해방촌 비밀 아지트</p>
           </div>
@@ -310,7 +310,7 @@ function CourseCardHaebangchon() {
       {/* duration */}
       <div className="absolute flex items-center gap-[10px] left-[36.79px] top-[265.5px]" style={{ transform: "rotate(-1.99deg)", transformOrigin: "left center" }}>
         <div className="size-[14.43px] relative flex-none"><AvgPaceIcon /></div>
-        <p className="font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">5~6시간</p>
+        <p className="font-figma-inter font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">5~6시간</p>
       </div>
       {/* dotted line */}
       <div className="absolute flex h-[50.051px] items-center justify-center left-[61.1px] top-[326.75px] w-[1.739px]">
@@ -325,17 +325,17 @@ function CourseCardHaebangchon() {
       {/* spot names */}
       <div className="absolute flex h-[18.961px] items-center justify-center left-[146.44px] top-[299.37px] w-[28.608px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">애일</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">애일</p>
         </div>
       </div>
       <div className="absolute flex h-[20.871px] items-center justify-center left-[147.83px] top-[337.55px] w-[83.575px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">소프커피앤바</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">소프커피앤바</p>
         </div>
       </div>
       <div className="absolute flex h-[19.447px] items-center justify-center left-[149.21px] top-[378.56px] w-[42.6px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">길바닥</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">길바닥</p>
         </div>
       </div>
       {/* tag pills */}
@@ -348,7 +348,7 @@ function CourseCardHaebangchon() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[17.657px] items-center justify-center left-[63.33px] top-[380.18px] w-[48.527px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[13px] text-center whitespace-nowrap">칵테일바</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[13px] text-center whitespace-nowrap">칵테일바</p>
         </div>
       </div>
     </div>
@@ -387,13 +387,13 @@ function CourseCardSeongsu() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[22.96px] items-center justify-center left-[99.07px] top-[161.9px] w-[41.2px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">성수동</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[14px] text-center whitespace-nowrap">성수동</p>
         </div>
       </div>
       {/* title */}
       <div className="absolute flex h-[93.216px] items-center justify-center left-[53.99px] top-[188.25px] w-[257.371px]">
         <div className="flex-none rotate-[9.11deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[22px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`피자 장인과 스페셜티 커피, `}</p>
             <p className="leading-[normal] whitespace-pre">성수 정복 코스</p>
           </div>
@@ -402,7 +402,7 @@ function CourseCardSeongsu() {
       {/* duration */}
       <div className="absolute flex items-center gap-[10px] left-[52.82px] top-[255.08px]" style={{ transform: "rotate(9.11deg)", transformOrigin: "left center" }}>
         <div className="size-[14.43px] relative flex-none"><AvgPaceIcon /></div>
-        <p className="font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">4~5시간</p>
+        <p className="font-figma-inter font-normal leading-none text-[#707070] text-[12px] whitespace-nowrap">4~5시간</p>
       </div>
       {/* dotted line */}
       <div className="absolute flex h-[49.449px] items-center justify-center left-[58.6px] top-[321.61px] w-[7.929px]">
@@ -417,17 +417,17 @@ function CourseCardSeongsu() {
       {/* spot names */}
       <div className="absolute flex h-[26.639px] items-center justify-center left-[160px] top-[307.85px] w-[58.143px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">마리오네</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">마리오네</p>
         </div>
       </div>
       <div className="absolute flex h-[24.422px] items-center justify-center left-[153.7px] top-[347.45px] w-[44.32px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">로우키</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">로우키</p>
         </div>
       </div>
       <div className="absolute flex h-[26.639px] items-center justify-center left-[147.6px] top-[386.57px] w-[58.143px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">성수연방</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[15px] whitespace-nowrap">성수연방</p>
         </div>
       </div>
       {/* tag pills */}
@@ -488,10 +488,10 @@ function YellowStarBadge() {
       <div className="absolute flex items-center justify-center left-[1110.96px] size-[224.853px] top-[2403.44px] pointer-events-none z-10">
         <div className="flex-none rotate-[4.74deg] flex flex-col items-center gap-[8px]">
           <div className="h-px w-[60.547px] bg-black" />
-          <p className="font-['Prompt',sans-serif] italic font-light text-[15.79px] text-black tracking-[0.6316px] leading-none whitespace-nowrap">
+          <p className="font-figma-prompt-solo italic font-light text-[15.79px] text-black tracking-[0.6316px] leading-none whitespace-nowrap">
             don&rsquo;t worry
           </p>
-          <p className="font-['Prompt',sans-serif] italic font-light text-black leading-none whitespace-nowrap inline-flex items-baseline gap-[2px]">
+          <p className="font-figma-prompt-solo italic font-light text-black leading-none whitespace-nowrap inline-flex items-baseline gap-[2px]">
             <span className="text-[7.545px]">with</span>
             <span className="text-[15.79px]">Dehangsa</span>
           </p>
@@ -546,7 +546,7 @@ export default function HotSpotSection() {
 
       {/* Main heading */}
       <div
-        className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[0] left-[130px] text-[#2d2e30] text-[40px] top-[1780.95px] whitespace-nowrap"
+        className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[0] left-[130px] text-[#2d2e30] text-[40px] top-[1780.95px] whitespace-nowrap"
       >
         <p className="leading-[55px] mb-0 whitespace-pre">{`요즘 가장 핫한 코스만 `}</p>
         <p className="leading-[55px] whitespace-pre">쏙쏙 골라드려요 !</p>
@@ -554,7 +554,7 @@ export default function HotSpotSection() {
 
       {/* Sub-copy */}
       <div
-        className="[word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[0] right-[130px] text-[#6f7176] text-[22px] text-right top-[1816.95px] whitespace-nowrap"
+        className="[word-break:break-word] absolute font-figma-prompt leading-[0] right-[130px] text-[#6f7176] text-[22px] text-right top-[1816.95px] whitespace-nowrap"
         style={{ fontVariationSettings: "'wght' 400" }}
       >
         <p className="leading-[35px] mb-0">실제 데행사가 추천하는 코스예요</p>

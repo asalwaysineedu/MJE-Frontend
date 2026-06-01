@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useEffect, useRef } from 'react';
 import svgPaths from "@/landing/ui/components/assets/svgPaths";
 import { imgRectangle716, imgRectangle717 } from "@/landing/ui/components/assets/images";
@@ -17,7 +17,7 @@ function TimeToHealLabel() {
           </g>
         </svg>
       </div>
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[979.03px] not-italic text-[16px] text-black top-[2462.92px] whitespace-nowrap">Time to Heal</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[normal] left-[979.03px] not-italic text-[16px] text-black top-[2462.92px] whitespace-nowrap">Time to Heal</p>
     </>
   );
 }
@@ -63,7 +63,7 @@ function NumberedCircle({ left, top, color, number, numberLeft, numberTop, strok
         </div>
       </div>
       <p
-        className="-translate-x-1/2 [word-break:break-word] absolute font-['Segoe_Script:Regular',sans-serif] leading-[39.144px] not-italic text-[21.92px] text-black text-center whitespace-nowrap"
+        className="-translate-x-1/2 [word-break:break-word] absolute font-figma-segoe leading-[39.144px] not-italic text-[21.92px] text-black text-center whitespace-nowrap"
         style={{ left: numberLeft, top: numberTop }}
       >
         {number}
@@ -95,7 +95,7 @@ function LocationInputMock() {
       <div className="absolute bg-white border-[#2a4874] border-[0.568px] border-solid h-[37.422px] left-[283.63px] rounded-[18.711px] top-[3035.42px] w-[217.516px]" />
       <MapPinHeartIcon />
       <p
-        className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[17.848px] left-[394.58px] text-[#b0b0b0] text-[9.735px] text-center top-[3045.21px] whitespace-nowrap"
+        className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[17.848px] left-[394.58px] text-[#b0b0b0] text-[9.735px] text-center top-[3045.21px] whitespace-nowrap"
         style={{ fontVariationSettings: "'wght' 400" }}
       >
         어디로 갈까요? (ex. 성수동, 홍대역)
@@ -127,7 +127,7 @@ function RotatedText({ left, top, w, h, text, color = "#b0b0b0" }: {
   return (
     <div className="absolute flex items-center justify-center" style={{ left, top, width: w, height: h }}>
       <div className="flex-none rotate-[-8.32deg]">
-        <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[17.591px] not-italic relative text-[9.595px] whitespace-nowrap" style={{ color }}>
+        <p className="[word-break:break-word] font-figma-prompt-solo leading-[17.591px] not-italic relative text-[9.595px] whitespace-nowrap" style={{ color }}>
           {text}
         </p>
       </div>
@@ -150,7 +150,7 @@ function TimePickerMock() {
       </div>
       <div className="absolute flex h-[26.782px] items-center justify-center left-[638.57px] top-[3040.31px] w-[63.952px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[17.591px] relative text-[#b0b0b0] text-[9.595px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+          <p className="[word-break:break-word] font-figma-prompt leading-[17.591px] relative text-[#b0b0b0] text-[9.595px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
             언제 만날까요?
           </p>
         </div>
@@ -240,7 +240,7 @@ function TransportModePills() {
               </g>
             </svg>
           </div>
-          <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[18.933px] relative shrink-0 text-[#2a4874] text-[10.327px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>자차 이동</p>
+          <p className="[word-break:break-word] font-figma-prompt leading-[18.933px] relative shrink-0 text-[#2a4874] text-[10.327px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>자차 이동</p>
         </div>
       </div>
       <div className="bg-white content-stretch flex flex-col h-[37.587px] items-start px-[16.352px] py-[8.606px] relative rounded-[19.849px] shrink-0 w-[98.97px]">
@@ -258,7 +258,7 @@ function TransportModePills() {
               </g>
             </svg>
           </div>
-          <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[18.933px] relative shrink-0 text-[#2a4874] text-[10.327px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>도보 이동</p>
+          <p className="[word-break:break-word] font-figma-prompt leading-[18.933px] relative shrink-0 text-[#2a4874] text-[10.327px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>도보 이동</p>
         </div>
       </div>
       <div className="bg-white content-stretch flex flex-col h-[37.587px] items-start px-[18.073px] py-[8.606px] relative rounded-[19.849px] shrink-0 w-[98.97px]">
@@ -276,7 +276,7 @@ function TransportModePills() {
               </g>
             </svg>
           </div>
-          <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[18.933px] relative shrink-0 text-[#2a4874] text-[10.327px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>대중교통</p>
+          <p className="[word-break:break-word] font-figma-prompt leading-[18.933px] relative shrink-0 text-[#2a4874] text-[10.327px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>대중교통</p>
         </div>
       </div>
     </div>
@@ -305,12 +305,12 @@ function StepGuideContents({
   return (
     <>
       {/* 공통: 헤딩 + 서브카피 (애니메이션 없음) */}
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[0] left-[calc(50%-1.08px)] text-[#2d2e30] text-[40px] text-center top-[2747.61px] whitespace-nowrap">
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[0] left-[calc(50%-1.08px)] text-[#2d2e30] text-[40px] text-center top-[2747.61px] whitespace-nowrap">
         <span className="leading-[55px]">{`복잡한 서치는 끝, `}</span>
         <span className="leading-[55px] text-[#2a4874]">터치 3번</span>
         <span className="leading-[55px]">이면 충분해요</span>
       </p>
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[0] left-[calc(50%-0.58px)] text-[#6f7176] text-[16px] text-center top-[2814.53px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[0] left-[calc(50%-0.58px)] text-[#6f7176] text-[16px] text-center top-[2814.53px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         <p className="leading-[25px] mb-0 whitespace-pre">{`맛집 검색부터 동선 계산까지 머리 아픈 과정은 전부 건너뛰세요 `}</p>
         <p className="leading-[25px] whitespace-pre">데행사가 알아서 다 짜드리니까요</p>
       </div>
@@ -319,8 +319,8 @@ function StepGuideContents({
       <AnimGroup divRef={g1Ref}>
         <div className="absolute bg-white border border-[#2d2e30] border-solid h-[145.881px] left-[239.54px] rounded-[92.335px] shadow-[0px_2px_17.4px_0px_rgba(0,0,0,0.03)] top-[2899.27px] w-[307.03px]" />
         <NumberedCircle left={273.46} top={2918.46} color="#F9DDF6" number="1" numberLeft={290.85} numberTop={2920.48} strokeLeft={268.32} strokeTop={2916.28} strokePath="p34713480" />
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[25px] left-[392.39px] not-italic text-[#2a4874] text-[20px] text-center top-[2931.73px] whitespace-nowrap">장소입력</p>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[25px] left-[392.39px] text-[#3e3e3e] text-[14px] text-center top-[2964.68px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[25px] left-[392.39px] not-italic text-[#2a4874] text-[20px] text-center top-[2931.73px] whitespace-nowrap">장소입력</p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[25px] left-[392.39px] text-[#3e3e3e] text-[14px] text-center top-[2964.68px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
           동네·역 이름만 입력해요<br aria-hidden="true" />(예: 성수동, 홍대역)
         </p>
         <LocationInputMock />
@@ -330,8 +330,8 @@ function StepGuideContents({
       <AnimGroup divRef={g2Ref}>
         <div className="-translate-x-1/2 absolute bg-white border border-[#2d2e30] border-solid h-[145.881px] left-[calc(50%-0.58px)] rounded-[92.335px] shadow-[0px_2px_17.4px_0px_rgba(0,0,0,0.03)] top-[2899.27px] w-[307.03px]" />
         <NumberedCircle left={596.72} top={2916.77} color="#DBECFE" number="2" numberLeft={615.53} numberTop={2920.48} strokeLeft={593.2} strokeTop={2916.28} strokePath="p17778000" />
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[25px] left-[calc(50%-0.58px)] not-italic text-[#2a4874] text-[20px] text-center top-[2937.73px] whitespace-nowrap">시간대 선택</p>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[25px] left-[calc(50%-0.58px)] text-[#3e3e3e] text-[14px] text-center top-[2977.18px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[25px] left-[calc(50%-0.58px)] not-italic text-[#2a4874] text-[20px] text-center top-[2937.73px] whitespace-nowrap">시간대 선택</p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[25px] left-[calc(50%-0.58px)] text-[#3e3e3e] text-[14px] text-center top-[2977.18px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
           언제 만나는지 선택해요
         </p>
         <TimePickerMock />
@@ -341,8 +341,8 @@ function StepGuideContents({
       <AnimGroup divRef={g3Ref}>
         <div className="absolute bg-white border border-[#2d2e30] border-solid h-[145.881px] left-[893.43px] rounded-[92.335px] shadow-[0px_2px_17.4px_0px_rgba(0,0,0,0.03)] top-[2899.27px] w-[307.03px]" />
         <NumberedCircle left={921.68} top={2917.88} color="#CAE594" number="3" numberLeft={939.42} numberTop={2920.49} strokeLeft={917.56} strokeTop={2916.28} strokePath="p17778000" />
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[25px] left-[1046.94px] not-italic text-[#2a4874] text-[20px] text-center top-[2937.73px] whitespace-nowrap">이동방식 선택</p>
-        <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[25px] left-[1046.44px] text-[#3e3e3e] text-[14px] text-center top-[2977.18px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[25px] left-[1046.94px] not-italic text-[#2a4874] text-[20px] text-center top-[2937.73px] whitespace-nowrap">이동방식 선택</p>
+        <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[25px] left-[1046.44px] text-[#3e3e3e] text-[14px] text-center top-[2977.18px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
           도보 or 대중교통 or 자차 중에 선택해요
         </p>
         <TransportModePills />

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import svgPaths from "@/landing/ui/components/assets/svgPaths";
@@ -26,7 +26,7 @@ export default function HeroCtaButton() {
         }}
       />
       <span
-        className="[word-break:break-word] absolute font-['Prompt','Noto_Sans_KR',sans-serif] font-medium leading-[22px] left-[53.84px] text-[#2a4874] text-[15px] top-[12.09px] whitespace-nowrap pointer-events-none"
+        className="[word-break:break-word] absolute font-figma-prompt font-medium leading-[22px] left-[53.84px] text-[#2a4874] text-[15px] top-[12.09px] whitespace-nowrap pointer-events-none"
       >
         데이트 코스 만들기 !
       </span>

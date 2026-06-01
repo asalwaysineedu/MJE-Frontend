@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useEffect, useRef } from 'react';
 import { imgCtaBottomPhoto } from "@/landing/ui/components/assets/images";
 import BottomCtaButton from "@/landing/ui/components/sections/BottomCtaButton";
@@ -13,7 +13,7 @@ function CozyCafeTag() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[32.017px] items-center justify-center left-[209.75px] top-[3665.75px] w-[101.718px]">
         <div className="flex-none rotate-[-6.4deg]">
-          <p className="[word-break:break-word] font-['Prompt',sans-serif] leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Cozy Cafe</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Cozy Cafe</p>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ function CocktailBarTag() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[22.231px] items-center justify-center left-[272.13px] top-[3709.64px] w-[117.215px]">
         <div className="flex-none rotate-[-0.6deg]">
-          <p className="[word-break:break-word] font-['Prompt',sans-serif] leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Cocktail Bar</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Cocktail Bar</p>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@ function PopUpStoresTag() {
   return (
     <div className="absolute contents left-[1103.19px] top-[3700.29px]">
       <div className="absolute bg-[#dbecfe] h-[42.489px] left-[1103.19px] rounded-[8.396px] top-[3700.29px] w-[174.145px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt',sans-serif] leading-[20.989px] left-[1190.08px] not-italic text-[20.15px] text-black text-center top-[3711.04px] whitespace-nowrap">Pop-up Stores</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt-solo leading-[20.989px] left-[1190.08px] not-italic text-[20.15px] text-black text-center top-[3711.04px] whitespace-nowrap">Pop-up Stores</p>
     </div>
   );
 }
@@ -56,7 +56,7 @@ function ParkTag() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[26.526px] items-center justify-center left-[1153.3px] top-[3610.52px] w-[45.408px]">
         <div className="flex-none rotate-[-7.63deg]">
-          <p className="[word-break:break-word] font-['Prompt',sans-serif] leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Park</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Park</p>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ function HotSpotsTag() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[40.249px] items-center justify-center left-[1219.19px] top-[3652.91px] w-[98.266px]">
         <div className="flex-none rotate-[11.84deg]">
-          <p className="[word-break:break-word] font-['Prompt',sans-serif] leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Hot Spots</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[20.989px] not-italic relative text-[20.15px] text-black text-center whitespace-nowrap">Hot Spots</p>
         </div>
       </div>
     </div>
@@ -127,11 +127,11 @@ export default function CtaSection() {
 
       {/* Headings */}
       <p
-        className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium h-[32.38px] leading-[25px] left-1/2 text-[48px] text-black text-center top-[3527.92px] w-[699px]"
+        className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium h-[32.38px] leading-[25px] left-1/2 text-[48px] text-black text-center top-[3527.92px] w-[699px]"
       >
         지금은 완벽한 데이트를 만들 시간!
       </p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt',sans-serif] leading-[25px] left-1/2 not-italic text-[#656565] text-[20px] text-center top-[3589.91px] whitespace-nowrap">
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt-solo leading-[25px] left-1/2 not-italic text-[#656565] text-[20px] text-center top-[3589.91px] whitespace-nowrap">
         Time to build your date!
       </p>
 

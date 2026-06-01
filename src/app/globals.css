@@ -85,6 +85,15 @@ body {
 }
 
 @layer utilities {
+  .font-figma-prompt { font-family: Prompt, 'Noto Sans KR', sans-serif; }
+  .font-figma-prompt-solo { font-family: Prompt, sans-serif; }
+  .font-figma-inter { font-family: Inter, 'Noto Sans KR', sans-serif; }
+  .font-figma-pretendard { font-family: Pretendard, sans-serif; }
+  .font-figma-sf { font-family: 'SF Pro Text', sans-serif; }
+  .font-figma-noto { font-family: 'Noto Sans', sans-serif; }
+  .font-figma-noto-serif { font-family: 'Noto Serif Tamil Slanted', 'Noto Sans', sans-serif; }
+  .font-figma-segoe { font-family: 'Segoe Script', sans-serif; }
+
   .animate-shake {
     animation: shake 0.4s ease-in-out;
   }

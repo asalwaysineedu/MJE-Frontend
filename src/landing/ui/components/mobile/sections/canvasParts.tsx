@@ -1,4 +1,4 @@
-import svgPaths from "@/landing/ui/components/mobile/assets/svgPaths";
+﻿import svgPaths from "@/landing/ui/components/mobile/assets/svgPaths";
 import {
   imgHeroOverlay,
   imgIMockupIPhone14,
@@ -57,7 +57,7 @@ export function Frame7() {
   return (
     <div className="absolute h-[24.156px] left-[89.49px] top-[203.85px] w-[222.647px]">
       <div className="absolute bg-[#d5e6f6] h-[9.156px] left-0 right-0 top-[7px]" />
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[14.531px] left-0 right-0 text-[#333] text-[13.21px] text-center top-0" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="[word-break:break-word] absolute font-figma-prompt leading-[14.531px] left-0 right-0 text-[#333] text-[13.21px] text-center top-0" style={{ fontVariationSettings: "'wght' 400" }}>
         데이트코스 고민 30분, 이제 30초로 !
       </p>
     </div>
@@ -93,7 +93,7 @@ export function Group() {
 export function Group1() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
-      <p className="[word-break:break-word] col-1 font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[16.815px] ml-0 mt-0 relative row-1 text-[#797979] text-[11.465px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="[word-break:break-word] col-1 font-figma-prompt leading-[16.815px] ml-0 mt-0 relative row-1 text-[#797979] text-[11.465px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         맛집·카페·놀거리까지 한 번에
       </p>
     </div>
@@ -116,7 +116,7 @@ export function Group65() {
 export function Group10() {
   return (
     <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
-      <p className="[word-break:break-word] col-1 font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[16.815px] ml-0 mt-0 relative row-1 text-[#797979] text-[11.465px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="[word-break:break-word] col-1 font-figma-prompt leading-[16.815px] ml-0 mt-0 relative row-1 text-[#797979] text-[11.465px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         원하는 조건 3가지만 입력하면 데이트 준비 끝
       </p>
     </div>
@@ -152,7 +152,7 @@ export function Group6() {
 export function Group2() {
   return (
     <div className="absolute contents left-[109.22px] top-[678.85px]">
-      <p className="[word-break:break-word] absolute font-['Prompt:Medium','Noto_Sans_KR:Medium',sans-serif] leading-[24.592px] left-[109.22px] text-[#2a4874] text-[17.885px] top-[678.85px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 500" }}>
+      <p className="[word-break:break-word] absolute font-figma-prompt leading-[24.592px] left-[109.22px] text-[#2a4874] text-[17.885px] top-[678.85px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 500" }}>
         데이트 코스 만들기 !
       </p>
     </div>
@@ -203,7 +203,7 @@ export function Group72() {
             <path d={svgPaths.p1c3f1200} fill="#7A8290" />
           </svg>
         </span>
-        <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-none not-italic text-[#7a8290] text-[14.555px] whitespace-nowrap">Scroll Down</p>
+        <p className="[word-break:break-word] font-figma-prompt-solo leading-none not-italic text-[#7a8290] text-[14.555px] whitespace-nowrap">Scroll Down</p>
       </div>
     </div>
   );
@@ -226,8 +226,8 @@ export function Frame14() {
 export function Frame12() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center leading-[normal] left-[274.36px] not-italic text-[#2d2e30] text-center top-[467.92px] w-[48px]">
-      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[22.012px] w-full">98%</p>
-      <p className="font-['Pretendard',sans-serif] relative shrink-0 text-[7.337px] w-full">만족도</p>
+      <p className="font-figma-pretendard font-medium relative shrink-0 text-[22.012px] w-full">98%</p>
+      <p className="font-figma-pretendard relative shrink-0 text-[7.337px] w-full">만족도</p>
     </div>
   );
 }
@@ -257,8 +257,8 @@ export function Frame13() {
 export function Frame11() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center leading-[normal] left-[167.74px] not-italic text-center top-[467.96px] w-[67px]">
-      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#644160] text-[22.012px] w-full whitespace-nowrap">10 Sec</p>
-      <p className="font-['Pretendard',sans-serif] relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">코스 생성 평균 속도</p>
+      <p className="font-figma-pretendard font-medium relative shrink-0 text-[#644160] text-[22.012px] w-full whitespace-nowrap">10 Sec</p>
+      <p className="font-figma-pretendard relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">코스 생성 평균 속도</p>
     </div>
   );
 }
@@ -274,8 +274,8 @@ export function Group13() {
 export function Frame10() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center leading-[normal] left-[67.97px] not-italic text-center top-[467.92px] w-[74px]">
-      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#273b62] text-[22.012px] w-full">9,200+</p>
-      <p className="font-['Pretendard',sans-serif] relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">생성된 코스</p>
+      <p className="font-figma-pretendard font-medium relative shrink-0 text-[#273b62] text-[22.012px] w-full">9,200+</p>
+      <p className="font-figma-pretendard relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">생성된 코스</p>
     </div>
   );
 }
@@ -294,7 +294,7 @@ export function Group78() {
       <Group9 />
       <Group71 />
       <Frame7 />
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-semibold leading-[0] left-1/2 not-italic text-[0px] text-black text-center top-[239.15px] whitespace-nowrap">
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-semibold leading-[0] left-1/2 not-italic text-[0px] text-black text-center top-[239.15px] whitespace-nowrap">
         <p className="leading-[normal] mb-0 text-[#2a4874] text-[19.26px]">데이트코스 계획이 어려운 커플들을 위한</p>
         <p className="leading-[normal] text-[#2d2e30] text-[30.816px]">가장 쉬운 데이트코스 플래닝</p>
       </div>
@@ -332,7 +332,7 @@ export function LeftSide() {
       <div className="flex flex-col items-center justify-center size-full">
         <div className="content-stretch flex flex-col items-center justify-center pb-[3px] pl-[10px] relative size-full">
           <div className="h-[21px] relative rounded-[24px] shrink-0 w-[54px]" data-name="_StatusBar-time">
-            <p className="-translate-x-1/2 [word-break:break-word] absolute font-['SF_Pro_Text:Semibold',sans-serif] h-[20px] leading-[21px] left-[27px] not-italic text-[16px] text-black text-center top-px tracking-[-0.32px] w-[54px]">9:41</p>
+            <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-sf h-[20px] leading-[21px] left-[27px] not-italic text-[16px] text-black text-center top-px tracking-[-0.32px] w-[54px]">9:41</p>
           </div>
         </div>
       </div>
@@ -396,7 +396,7 @@ export function SignalWifiBattery() {
             <path d={svgPaths.p237cb000} fill="var(--fill-0, black)" id="Battery End" opacity="0.4" />
           </svg>
         </div>
-        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-['SF_Pro_Text:Bold',sans-serif] justify-center leading-[0] left-[calc(50%-1.7px)] not-italic text-[10px] text-center text-white top-1/2 tracking-[0.06px] whitespace-nowrap" style={{ fontFeatureSettings: "'case'" }}>
+        <div className="-translate-x-1/2 -translate-y-1/2 [word-break:break-word] absolute flex flex-col font-figma-sf justify-center leading-[0] left-[calc(50%-1.7px)] not-italic text-[10px] text-center text-white top-1/2 tracking-[0.06px] whitespace-nowrap" style={{ fontFeatureSettings: "'case'" }}>
           <p className="leading-[13px]">80</p>
         </div>
       </div>
@@ -418,7 +418,7 @@ export function RightSide() {
 
 export function Group17() {
   return (
-    <div className="[word-break:break-word] absolute contents font-['Prompt:Medium','Noto_Sans_KR:Medium',sans-serif] leading-[25.483px] left-[132.49px] top-[1381.47px] whitespace-nowrap">
+    <div className="[word-break:break-word] absolute contents font-figma-prompt leading-[25.483px] left-[132.49px] top-[1381.47px] whitespace-nowrap">
       <p className="absolute left-[132.49px] text-[#2a4874] text-[10.992px] top-[1381.47px]" style={{ fontVariationSettings: "'wght' 500" }}>
         인터넷, SNS 에서 찾는 시간
       </p>
@@ -433,7 +433,7 @@ export function Group19() {
   return (
     <div className="absolute contents left-[83.41px] top-[1373.88px]">
       <div className="absolute bg-white border-[#d9d9d9] border-[0.749px] border-solid h-[56.151px] left-[83.41px] rounded-[28.075px] top-[1373.88px] w-[235.183px]" />
-      <p className="[word-break:break-word] absolute font-['Prompt:Medium',sans-serif] leading-[25.483px] left-[98.15px] not-italic text-[#8aafe6] text-[19.986px] top-[1389.22px] whitespace-nowrap">01</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[25.483px] left-[98.15px] not-italic text-[#8aafe6] text-[19.986px] top-[1389.22px] whitespace-nowrap">01</p>
       <Group17 />
     </div>
   );
@@ -441,7 +441,7 @@ export function Group19() {
 
 export function Group18() {
   return (
-    <div className="[word-break:break-word] absolute contents font-['Prompt:Medium','Noto_Sans_KR:Medium',sans-serif] leading-[25.483px] left-[132.49px] top-[1446.55px] whitespace-nowrap">
+    <div className="[word-break:break-word] absolute contents font-figma-prompt leading-[25.483px] left-[132.49px] top-[1446.55px] whitespace-nowrap">
       <p className="absolute left-[132.49px] text-[#2a4874] text-[10.992px] top-[1446.55px]" style={{ fontVariationSettings: "'wght' 500" }}>
         동선이 엉망인 코스
       </p>
@@ -457,14 +457,14 @@ export function Group22() {
     <div className="absolute contents left-[83.41px] top-[1438.96px]">
       <div className="absolute bg-white border-[#d9d9d9] border-[0.749px] border-solid h-[56.151px] left-[83.41px] rounded-[28.075px] top-[1438.96px] w-[235.183px]" />
       <Group18 />
-      <p className="[word-break:break-word] absolute font-['Prompt:Medium',sans-serif] leading-[25.483px] left-[98.15px] not-italic text-[#8aafe6] text-[19.986px] top-[1454.29px] whitespace-nowrap">02</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[25.483px] left-[98.15px] not-italic text-[#8aafe6] text-[19.986px] top-[1454.29px] whitespace-nowrap">02</p>
     </div>
   );
 }
 
 export function Group20() {
   return (
-    <div className="[word-break:break-word] absolute contents font-['Prompt:Medium','Noto_Sans_KR:Medium',sans-serif] leading-[25.483px] left-[132.49px] top-[1511.59px] whitespace-nowrap">
+    <div className="[word-break:break-word] absolute contents font-figma-prompt leading-[25.483px] left-[132.49px] top-[1511.59px] whitespace-nowrap">
       <p className="absolute left-[132.49px] text-[#2a4874] text-[10.992px] top-[1511.59px]" style={{ fontVariationSettings: "'wght' 500" }}>
         준비하다 기분 다 날림
       </p>
@@ -480,7 +480,7 @@ export function Group21() {
     <div className="absolute contents left-[83.41px] top-[1504.03px]">
       <div className="absolute bg-white border-[#d9d9d9] border-[0.749px] border-solid h-[56.151px] left-[83.41px] rounded-[28.075px] top-[1504.03px] w-[235.183px]" />
       <Group20 />
-      <p className="[word-break:break-word] absolute font-['Prompt:Medium',sans-serif] leading-[25.483px] left-[98.15px] not-italic text-[#8aafe6] text-[19.986px] top-[1519.36px] whitespace-nowrap">03</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[25.483px] left-[98.15px] not-italic text-[#8aafe6] text-[19.986px] top-[1519.36px] whitespace-nowrap">03</p>
     </div>
   );
 }
@@ -498,11 +498,11 @@ export function Group68() {
 export function Group23() {
   return (
     <div className="-translate-x-1/2 absolute contents left-1/2 top-[1620.46px]">
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[19.644px] left-1/2 text-[#2d2e30] text-[13.394px] text-center top-[1621.07px] whitespace-pre" style={{ fontVariationSettings: "'wght' 400" }}>{`“ 아직도 데이트코스 계획 때문에            받고 계신가요? “`}</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[19.644px] left-1/2 text-[#2d2e30] text-[13.394px] text-center top-[1621.07px] whitespace-pre" style={{ fontVariationSettings: "'wght' 400" }}>{`“ 아직도 데이트코스 계획 때문에            받고 계신가요? “`}</p>
       <div className="absolute bg-[#333] h-[13.098px] left-[224.34px] rounded-[3.063px] top-[1623.41px] w-[48.779px]">
         <div aria-hidden className="absolute border-[#333] border-[0.613px] border-solid inset-[-0.306px] pointer-events-none rounded-[3.369px]" />
       </div>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[19.644px] left-[248.7px] text-[11.028px] text-center text-white top-[1620.46px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[19.644px] left-[248.7px] text-[11.028px] text-center text-white top-[1620.46px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         스트레스
       </p>
     </div>
@@ -528,14 +528,14 @@ export function Group4() {
       </div>
       <div className="absolute flex h-[14.208px] items-center justify-center left-[305.17px] top-[2064.46px] w-[39.624px]" data-hotspot-group="0">
         <div className="flex-none rotate-[4.74deg]">
-          <p className="font-[‘Noto_Serif_Tamil_Slanted:Regular’,’Noto_Sans:Italic’,sans-serif] italic leading-none relative text-[6.564px] text-black tracking-[0.2626px] whitespace-nowrap" style={{ fontVariationSettings: "’CTGR’ 0, ‘wdth’ 100, ‘wght’ 400" }}>
+          <p className="font-figma-noto-serif italic leading-none relative text-[6.564px] text-black tracking-[0.2626px] whitespace-nowrap" style={{ fontVariationSettings: "’CTGR’ 0, ‘wdth’ 100, ‘wght’ 400" }}>
             don&apos;t worry
           </p>
         </div>
       </div>
       <div className="absolute flex h-[14.244px] items-center justify-center left-[303.95px] top-[2075.27px] w-[40.064px]" data-hotspot-group="0">
         <div className="flex-none rotate-[4.74deg]">
-          <p className="font-['Noto_Sans:Italic',sans-serif] italic inline-flex items-baseline gap-[1px] text-black whitespace-nowrap leading-none">
+          <p className="font-figma-noto italic inline-flex items-baseline gap-[1px] text-black whitespace-nowrap leading-none">
             <span className="text-[3.136px]">with</span>
             <span className="text-[6.564px]">Dehangsa</span>
           </p>
@@ -603,7 +603,7 @@ export function Group28() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[5.309px] items-center justify-center left-[152.74px] top-[2153.44px] w-[9.168px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
         </div>
       </div>
     </div>
@@ -620,7 +620,7 @@ export function Group26() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[5.309px] items-center justify-center left-[152.26px] top-[2139.77px] w-[9.168px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
         </div>
       </div>
     </div>
@@ -637,7 +637,7 @@ export function Group27() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[5.587px] items-center justify-center left-[153.1px] top-[2166.8px] w-[17.163px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">칵테일바</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">칵테일바</p>
         </div>
       </div>
     </div>
@@ -654,17 +654,17 @@ export function Group34() {
       </div>
       <div className="absolute flex h-[6.344px] items-center justify-center left-[181.12px] top-[2138.24px] w-[10.202px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">애일</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">애일</p>
         </div>
       </div>
       <div className="absolute flex h-[7.003px] items-center justify-center left-[181.6px] top-[2151.24px] w-[29.191px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">소프커피앤바</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">소프커피앤바</p>
         </div>
       </div>
       <div className="absolute flex h-[6.517px] items-center justify-center left-[182.07px] top-[2165.22px] w-[15.199px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">길바닥</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">길바닥</p>
         </div>
       </div>
       <MaskGroup />
@@ -680,22 +680,22 @@ export function Group34() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.482px] items-center justify-center left-[153.55px] top-[2092.71px] w-[14.2px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">용산구</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">용산구</p>
         </div>
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.482px] items-center justify-center left-[185.27px] top-[2091.61px] w-[14.2px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">해방촌</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">해방촌</p>
         </div>
       </div>
       <div className="absolute flex h-[5.552px] items-center justify-center left-[150.34px] top-[2125.74px] w-[16.164px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">5~6시간</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">5~6시간</p>
         </div>
       </div>
       <div className="absolute flex h-[20.523px] items-center justify-center left-[141.94px] top-[2100.7px] w-[73.581px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`이국적인 감성 한 스푼, `}</p>
             <p className="leading-[normal] whitespace-pre">해방촌 비밀 아지트</p>
           </div>
@@ -769,7 +769,7 @@ export function Group24() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.362px] items-center justify-center left-[36.67px] top-[2178.04px] w-[9.678px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
         </div>
       </div>
     </div>
@@ -786,7 +786,7 @@ export function Group25() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.362px] items-center justify-center left-[34.52px] top-[2191.37px] w-[9.678px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">팝업</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">팝업</p>
         </div>
       </div>
     </div>
@@ -803,7 +803,7 @@ export function Group32() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.362px] items-center justify-center left-[38.82px] top-[2164.54px] w-[9.678px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
         </div>
       </div>
     </div>
@@ -826,17 +826,17 @@ export function Group33() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[8.141px] items-center justify-center left-[49.04px] top-[2118.29px] w-[14.773px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">성수동</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">성수동</p>
         </div>
       </div>
       <div className="absolute flex h-[7.47px] items-center justify-center left-[39.56px] top-[2152px] w-[16.59px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">4~5시간</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">4~5시간</p>
         </div>
       </div>
       <div className="absolute flex h-[31.389px] items-center justify-center left-[33.41px] top-[2127.27px] w-[87.765px]">
         <div className="flex-none rotate-[9.11deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`피자 장인과 스페셜티 커피, `}</p>
             <p className="leading-[normal] whitespace-pre">성수 정복 코스</p>
           </div>
@@ -859,17 +859,17 @@ export function Group33() {
       <Group32 />
       <div className="absolute flex h-[8.932px] items-center justify-center left-[57.86px] top-[2168.05px] w-[19.71px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">마리오네</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">마리오네</p>
         </div>
       </div>
       <div className="absolute flex h-[8.299px] items-center justify-center left-[55.69px] top-[2181.55px] w-[15.761px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">로우키</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">로우키</p>
         </div>
       </div>
       <div className="absolute flex h-[8.932px] items-center justify-center left-[53.56px] top-[2194.88px] w-[19.71px]">
         <div className="flex-none rotate-[9.11deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">성수연방</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">성수연방</p>
         </div>
       </div>
     </div>
@@ -994,7 +994,7 @@ export function Group31() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.705px] items-center justify-center left-[292.76px] top-[2277.33px] w-[9.82px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">쇼핑</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">쇼핑</p>
         </div>
       </div>
     </div>
@@ -1011,7 +1011,7 @@ export function Group29() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.705px] items-center justify-center left-[290.01px] top-[2263.93px] w-[9.82px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
         </div>
       </div>
     </div>
@@ -1028,7 +1028,7 @@ export function Group30() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.705px] items-center justify-center left-[295.45px] top-[2290.56px] w-[9.82px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
         </div>
       </div>
     </div>
@@ -1045,17 +1045,17 @@ export function Group35() {
       </div>
       <div className="absolute flex h-[7.885px] items-center justify-center left-[317.83px] top-[2256.68px] w-[11.001px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">소점</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">소점</p>
         </div>
       </div>
       <div className="absolute flex h-[9.692px] items-center justify-center left-[320.57px] top-[2268.27px] w-[19.818px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">사운즈굿</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">사운즈굿</p>
         </div>
       </div>
       <div className="absolute flex h-[11.699px] items-center justify-center left-[323.29px] top-[2279.49px] w-[29.614px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">턴다운서비스</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">턴다운서비스</p>
         </div>
       </div>
       <MaskGroup2 />
@@ -1066,17 +1066,17 @@ export function Group35() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[8.688px] items-center justify-center left-[283.53px] top-[2216.9px] w-[14.919px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">연남동</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">연남동</p>
         </div>
       </div>
       <div className="absolute flex h-[8.11px] items-center justify-center left-[285.18px] top-[2247.81px] w-[16.678px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">4~5시간</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">4~5시간</p>
         </div>
       </div>
       <div className="absolute flex h-[33.29px] items-center justify-center left-[273.31px] top-[2214.7px] w-[80.026px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`힙스터들의 숨은 아지트, `}</p>
             <p className="leading-[normal] whitespace-pre">연남동 골목 탐방</p>
           </div>
@@ -1150,7 +1150,7 @@ export function Group42() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[5.873px] items-center justify-center left-[169.65px] top-[2291.52px] w-[9.454px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">카페</p>
         </div>
       </div>
     </div>
@@ -1167,7 +1167,7 @@ export function Group43() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[5.873px] items-center justify-center left-[171.02px] top-[2277.91px] w-[9.454px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">식사</p>
         </div>
       </div>
     </div>
@@ -1184,7 +1184,7 @@ export function Group44() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.671px] items-center justify-center left-[168.2px] top-[2304.54px] w-[17.414px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">칵테일바</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.432px] text-center whitespace-nowrap">칵테일바</p>
         </div>
       </div>
     </div>
@@ -1201,17 +1201,17 @@ export function Group36() {
       </div>
       <div className="absolute flex h-[7.866px] items-center justify-center left-[199.53px] top-[2280.91px] w-[19.504px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">칸다소바</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">칸다소바</p>
         </div>
       </div>
       <div className="absolute flex h-[9.462px] items-center justify-center left-[198.17px] top-[2294.52px] w-[35.424px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">포뮬라 아뜰리에</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">포뮬라 아뜰리에</p>
         </div>
       </div>
       <div className="absolute flex h-[6.469px] items-center justify-center left-[196.82px] top-[2307.95px] w-[5.574px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">참</p>
+          <p className="[word-break:break-word] font-figma-inter font-medium leading-[normal] not-italic relative text-[#2d2e30] text-[5.114px] whitespace-nowrap">참</p>
         </div>
       </div>
       <MaskGroup3 />
@@ -1227,22 +1227,22 @@ export function Group36() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[7.367px] items-center justify-center left-[178.53px] top-[2231.28px] w-[14.529px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">종로구</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">종로구</p>
         </div>
       </div>
       <div className="-translate-x-1/2 absolute flex h-[6.868px] items-center justify-center left-[209.66px] top-[2234.65px] w-[9.554px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">서촌</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">서촌</p>
         </div>
       </div>
       <div className="absolute flex h-[6.571px] items-center justify-center left-[170.98px] top-[2264.12px] w-[16.419px]">
         <div className="flex-none rotate-[5.73deg]">
-          <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">5~6시간</p>
+          <p className="[word-break:break-word] font-figma-inter font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">5~6시간</p>
         </div>
       </div>
       <div className="absolute flex h-[25.193px] items-center justify-center left-[164.26px] top-[2240.62px] w-[74.432px]">
         <div className="flex-none rotate-[5.73deg]">
-          <div className="[word-break:break-word] font-['Inter:Medium','Noto_Sans_KR:Medium',sans-serif] font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
+          <div className="[word-break:break-word] font-figma-inter font-medium leading-[0] not-italic relative text-[#2d2e30] text-[7.5px] whitespace-nowrap">
             <p className="leading-[normal] mb-0 whitespace-pre">{`이국적인 감성 한 스푼, `}</p>
             <p className="leading-[normal] whitespace-pre">해방촌 비밀 아지트</p>
           </div>
@@ -1297,7 +1297,7 @@ export function Group79() {
           </g>
         </svg>
       </div>
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[91.26px] not-italic text-[6.314px] text-black top-[2053.88px] whitespace-nowrap" data-hotspot-group="1">Hot Spot !</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[normal] left-[91.26px] not-italic text-[6.314px] text-black top-[2053.88px] whitespace-nowrap" data-hotspot-group="1">Hot Spot !</p>
       <div className="absolute h-[19.278px] left-[248.61px] top-[2311.19px] w-[49.056px]" data-name="Union" data-hotspot-group="4" style={{ filter: "drop-shadow(0px 2px 6px rgba(0,0,0,0.07))" }}>
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 49.0557 19.2783">
           <g id="Union">
@@ -1309,7 +1309,7 @@ export function Group79() {
           </g>
         </svg>
       </div>
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[253.67px] not-italic text-[6.424px] text-black top-[2318.37px] whitespace-nowrap" data-hotspot-group="4">Time to Heal</p>
+      <p className="[word-break:break-word] absolute font-figma-prompt-solo leading-[normal] left-[253.67px] not-italic text-[6.424px] text-black top-[2318.37px] whitespace-nowrap" data-hotspot-group="4">Time to Heal</p>
     </div>
   );
 }
@@ -1348,7 +1348,7 @@ export function Group49() {
     <div className="absolute contents left-[56.76px] top-[2987.66px]">
       <div className="absolute bg-white border-[#2a4874] border-[0.347px] border-solid h-[22.888px] left-[56.76px] rounded-[11.444px] top-[2987.66px] w-[133.039px]" />
       <MapPinHeart />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[10.916px] left-[124.75px] text-[#b0b0b0] text-[5.954px] text-center top-[2993.65px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[10.916px] left-[124.75px] text-[#b0b0b0] text-[5.954px] text-center top-[2993.65px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         어디로 갈까요? (ex. 성수동, 홍대역)
       </p>
     </div>
@@ -1372,7 +1372,7 @@ export function HandDrawnCircle1() {
 export function Group46() {
   return (
     <div className="absolute contents left-[55.98px] top-[2917.37px]">
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Segoe_Script:Regular',sans-serif] leading-[23.941px] left-[60.98px] not-italic text-[13.407px] text-black text-center top-[2917.37px] whitespace-nowrap">1</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-segoe leading-[23.941px] left-[60.98px] not-italic text-[13.407px] text-black text-center top-[2917.37px] whitespace-nowrap">1</p>
     </div>
   );
 }
@@ -1394,8 +1394,8 @@ export function Group73() {
   return (
     <div className="absolute contents left-[29.8px] top-[2904.39px]">
       <div className="absolute bg-white border-[#2d2e30] border-[0.612px] border-solid h-[89.225px] left-[29.8px] rounded-[56.475px] shadow-[0px_1.223px_10.642px_0px_rgba(0,0,0,0.03)] top-[2904.39px] w-[187.788px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[15.291px] left-[123.37px] not-italic text-[#2a4874] text-[12.233px] text-center top-[2924.25px] whitespace-nowrap">장소입력</p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[15.291px] left-[123.36px] text-[#3e3e3e] text-[8.563px] text-center top-[2944.4px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[15.291px] left-[123.37px] not-italic text-[#2a4874] text-[12.233px] text-center top-[2924.25px] whitespace-nowrap">장소입력</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[15.291px] left-[123.36px] text-[#3e3e3e] text-[8.563px] text-center top-[2944.4px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         동네·역 이름만 입력해요
         <br aria-hidden />
         (예: 성수동, 홍대역)
@@ -1468,7 +1468,7 @@ export function Group47() {
 export function Group55() {
   return (
     <div className="absolute contents left-[52.5px] top-[3154.05px]">
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Segoe_Script:Regular',sans-serif] leading-[23.941px] left-[57.5px] not-italic text-[13.407px] text-black text-center top-[3154.05px] whitespace-nowrap">3</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-segoe leading-[23.941px] left-[57.5px] not-italic text-[13.407px] text-black text-center top-[3154.05px] whitespace-nowrap">3</p>
     </div>
   );
 }
@@ -1527,7 +1527,7 @@ export function Frame() {
   return (
     <div className="content-stretch flex gap-[3.158px] items-end relative shrink-0">
       <DirectionsCar />
-      <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[11.58px] relative shrink-0 text-[#2a4874] text-[6.316px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="[word-break:break-word] font-figma-prompt leading-[11.58px] relative shrink-0 text-[#2a4874] text-[6.316px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         자차 이동
       </p>
     </div>
@@ -1564,7 +1564,7 @@ export function Frame1() {
   return (
     <div className="content-stretch flex gap-[2.632px] items-end relative shrink-0">
       <DirectionsWalk />
-      <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[11.58px] relative shrink-0 text-[#2a4874] text-[6.316px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="[word-break:break-word] font-figma-prompt leading-[11.58px] relative shrink-0 text-[#2a4874] text-[6.316px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         도보 이동
       </p>
     </div>
@@ -1601,7 +1601,7 @@ export function Frame2() {
   return (
     <div className="content-stretch flex gap-[2.632px] items-end relative shrink-0">
       <DirectionsRailway />
-      <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[11.58px] relative shrink-0 text-[#2a4874] text-[6.316px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="[word-break:break-word] font-figma-prompt leading-[11.58px] relative shrink-0 text-[#2a4874] text-[6.316px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         대중교통
       </p>
     </div>
@@ -1631,10 +1631,10 @@ export function Group75() {
   return (
     <div className="absolute contents left-[29.2px] top-[3141.07px]">
       <div className="absolute bg-white border-[#2d2e30] border-[0.612px] border-solid h-[89.225px] left-[29.57px] rounded-[56.475px] shadow-[0px_1.223px_10.642px_0px_rgba(0,0,0,0.03)] top-[3141.07px] w-[187.788px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[15.291px] left-[123.46px] text-[#3e3e3e] text-[8.563px] text-center top-[3188.72px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[15.291px] left-[123.46px] text-[#3e3e3e] text-[8.563px] text-center top-[3188.72px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         도보 or 대중교통 or 자차 중에 선택해요
       </p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[15.291px] left-[123.63px] not-italic text-[#2a4874] text-[12.233px] text-center top-[3164.59px] whitespace-nowrap">이동방식 선택</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[15.291px] left-[123.63px] not-italic text-[#2a4874] text-[12.233px] text-center top-[3164.59px] whitespace-nowrap">이동방식 선택</p>
       <div className="absolute flex h-[28.109px] items-center justify-center left-[46.85px] top-[3152.45px] w-[25.234px]">
         <div className="flex-none rotate-[15.4deg]">
           <HandDrawnCircle2 />
@@ -1687,7 +1687,7 @@ export function Group57() {
 export function Group59() {
   return (
     <div className="absolute contents left-[210.17px] top-[3006.62px]">
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Segoe_Script:Regular',sans-serif] leading-[23.941px] left-[215.17px] not-italic text-[13.407px] text-black text-center top-[3006.62px] whitespace-nowrap">2</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-segoe leading-[23.941px] left-[215.17px] not-italic text-[13.407px] text-black text-center top-[3006.62px] whitespace-nowrap">2</p>
     </div>
   );
 }
@@ -1741,7 +1741,7 @@ export function Group60() {
       </div>
       <div className="absolute flex h-[16.383px] items-center justify-center left-[229.45px] top-[3079.9px] w-[39.192px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[10.759px] relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+          <p className="[word-break:break-word] font-figma-prompt leading-[10.759px] relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
             언제 만날까요?
           </p>
         </div>
@@ -1757,62 +1757,62 @@ export function Group60() {
       </div>
       <div className="absolute flex h-[11.897px] items-center justify-center left-[268.05px] top-[3110.03px] w-[8.518px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">10</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">10</p>
         </div>
       </div>
       <div className="absolute flex h-[11.463px] items-center justify-center left-[267.96px] top-[3094.66px] w-[5.55px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">9</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">9</p>
         </div>
       </div>
       <div className="absolute flex h-[11.752px] items-center justify-center left-[273.06px] top-[3141.07px] w-[7.529px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">12</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">12</p>
         </div>
       </div>
       <div className="absolute flex h-[11.752px] items-center justify-center left-[275.34px] top-[3156.68px] w-[7.529px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">13</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">13</p>
         </div>
       </div>
       <div className="absolute flex h-[11.174px] items-center justify-center left-[277.73px] top-[3109.34px] w-[3.571px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
         </div>
       </div>
       <div className="absolute flex h-[11.174px] items-center justify-center left-[275.22px] top-[3093.89px] w-[3.571px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
         </div>
       </div>
       <div className="absolute flex h-[11.174px] items-center justify-center left-[282.25px] top-[3140.31px] w-[3.571px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
         </div>
       </div>
       <div className="absolute flex h-[11.174px] items-center justify-center left-[284.54px] top-[3155.91px] w-[3.571px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">:</p>
         </div>
       </div>
       <div className="absolute flex h-[12.042px] items-center justify-center left-[282.57px] top-[3107.76px] w-[9.508px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
         </div>
       </div>
       <div className="absolute flex h-[12.042px] items-center justify-center left-[280.3px] top-[3092.28px] w-[9.508px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
         </div>
       </div>
       <div className="absolute flex h-[12.042px] items-center justify-center left-[287.11px] top-[3138.81px] w-[9.508px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
         </div>
       </div>
       <div className="absolute flex h-[12.042px] items-center justify-center left-[289.38px] top-[3154.33px] w-[9.508px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[#b0b0b0] text-[5.869px] whitespace-nowrap">00</p>
         </div>
       </div>
       <div className="absolute flex h-[30.967px] items-center justify-center left-[225.74px] top-[3114.99px] w-[110.071px]">
@@ -1831,17 +1831,17 @@ export function Group60() {
       </div>
       <div className="absolute flex h-[11.608px] items-center justify-center left-[272.25px] top-[3125.52px] w-[6.539px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[5.869px] text-black whitespace-nowrap">11</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[5.869px] text-black whitespace-nowrap">11</p>
         </div>
       </div>
       <div className="absolute flex h-[11.174px] items-center justify-center left-[279.99px] top-[3124.82px] w-[3.571px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[5.869px] text-black whitespace-nowrap">:</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[5.869px] text-black whitespace-nowrap">:</p>
         </div>
       </div>
       <div className="absolute flex h-[12.042px] items-center justify-center left-[284.83px] top-[3123.25px] w-[9.508px]">
         <div className="flex-none rotate-[-8.32deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[10.759px] not-italic relative text-[5.869px] text-black whitespace-nowrap">00</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[10.759px] not-italic relative text-[5.869px] text-black whitespace-nowrap">00</p>
         </div>
       </div>
       <div className="absolute flex h-[26.929px] items-center justify-center left-[217.66px] top-[3085.5px] w-[116.984px]">
@@ -1877,10 +1877,10 @@ export function Group74() {
   return (
     <div className="absolute contents left-[185.01px] top-[2993.65px]">
       <div className="-translate-x-1/2 absolute bg-white border-[#2d2e30] border-[0.612px] border-solid h-[89.225px] left-[calc(50%+77.9px)] rounded-[56.475px] shadow-[0px_1.223px_10.642px_0px_rgba(0,0,0,0.03)] top-[2993.65px] w-[187.788px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[15.291px] left-[calc(50%+78.09px)] text-[#3e3e3e] text-[8.563px] text-center top-[3041.3px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[15.291px] left-[calc(50%+78.09px)] text-[#3e3e3e] text-[8.563px] text-center top-[3041.3px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         언제 만나는지 선택해요
       </p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[15.291px] left-[calc(50%+77.77px)] not-italic text-[#2a4874] text-[12.233px] text-center top-[3017.17px] whitespace-nowrap">시간대 선택</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[15.291px] left-[calc(50%+77.77px)] not-italic text-[#2a4874] text-[12.233px] text-center top-[3017.17px] whitespace-nowrap">시간대 선택</p>
       <div className="absolute flex h-[28.109px] items-center justify-center left-[203.86px] top-[3004.35px] w-[25.234px]">
         <div className="flex-none rotate-[15.4deg]">
           <HandDrawnCircle4 />
@@ -1906,7 +1906,7 @@ export function Group61() {
   return (
     <div className="absolute contents left-[209.26px] top-[3779.5px]">
       <div className="absolute bg-[#dbecfe] h-[37.677px] left-[209.26px] rounded-[7.445px] top-[3779.5px] w-[154.419px]" data-cta-tag="4" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[18.612px] left-[286.18px] not-italic text-[17.867px] text-black text-center top-[3789.03px] whitespace-nowrap" data-cta-tag="4">Pop-up Stores</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt-solo leading-[18.612px] left-[286.18px] not-italic text-[17.867px] text-black text-center top-[3789.03px] whitespace-nowrap" data-cta-tag="4">Pop-up Stores</p>
     </div>
   );
 }
@@ -1921,7 +1921,7 @@ export function Group62() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[36.035px] items-center justify-center left-[312.02px] top-[3737.49px] w-[87.09px]" data-cta-tag="1">
         <div className="flex-none rotate-[11.84deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Hot Spots</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Hot Spots</p>
         </div>
       </div>
     </div>
@@ -1938,7 +1938,7 @@ export function Group64() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[24.379px] items-center justify-center left-[232.24px] top-[3705.13px] w-[40.254px]" data-cta-tag="0">
         <div className="flex-none rotate-[-7.63deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] h-[19.504px] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center w-[38px]">Park</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo h-[19.504px] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center w-[38px]">Park</p>
         </div>
       </div>
     </div>
@@ -1965,7 +1965,7 @@ export function Group66() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[45.238px] items-center justify-center left-[158.87px] top-[3761.72px] w-[105.377px]" data-cta-tag="3">
         <div className="flex-none rotate-[-14.98deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Cocktail Bar</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Cocktail Bar</p>
         </div>
       </div>
     </div>
@@ -1982,7 +1982,7 @@ export function Group67() {
       </div>
       <div className="-translate-x-1/2 absolute flex h-[24.474px] items-center justify-center left-[89.87px] top-[3743.44px] w-[89.017px]" data-cta-tag="2">
         <div className="flex-none rotate-[3.59deg]">
-          <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Cozy Cafe</p>
+          <p className="[word-break:break-word] font-figma-prompt-solo leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Cozy Cafe</p>
         </div>
       </div>
     </div>
@@ -2027,7 +2027,7 @@ export function Group69() {
 export function Group3() {
   return (
     <div className="absolute contents left-[97.11px] top-[4165.32px]">
-      <p className="[word-break:break-word] absolute font-['Prompt:Medium','Noto_Sans_KR:Medium',sans-serif] leading-[24.592px] left-[97.11px] text-[17.885px] text-white top-[4165.32px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 500" }}>
+      <p className="[word-break:break-word] absolute font-figma-prompt leading-[24.592px] left-[97.11px] text-[17.885px] text-white top-[4165.32px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 500" }}>
         데이트 코스 만들러가기
       </p>
     </div>

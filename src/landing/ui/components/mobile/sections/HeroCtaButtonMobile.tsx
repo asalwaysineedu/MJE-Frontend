@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import svgPaths from "@/landing/ui/components/mobile/assets/svgPaths";
@@ -25,7 +25,7 @@ export default function HeroCtaButtonMobile() {
           backdropFilter: "blur(2px)",
         }}
       />
-      <span className="[word-break:break-word] absolute font-['Prompt','Noto_Sans_KR',sans-serif] font-medium leading-[24.592px] left-[60px] text-[#2a4874] text-[17.885px] top-[12px] whitespace-nowrap pointer-events-none">
+      <span className="[word-break:break-word] absolute font-figma-prompt font-medium leading-[24.592px] left-[60px] text-[#2a4874] text-[17.885px] top-[12px] whitespace-nowrap pointer-events-none">
         데이트 코스 만들기 !
       </span>
       <span className="absolute left-[221px] size-[22.293px] top-[14px] pointer-events-none">

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { useLogoTracking } from "@/home/hooks/useLogoTracking";
@@ -33,7 +33,7 @@ export default function LandingNavbarMobile() {
         href="/home"
         onClick={handleHomeTabClick}
         aria-label="홈으로 이동"
-        className="absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[133px] not-italic text-[14px] text-black text-center top-[20px] whitespace-nowrap z-20"
+        className="absolute font-figma-prompt-solo leading-[normal] left-[133px] not-italic text-[14px] text-black text-center top-[20px] whitespace-nowrap z-20"
       >
         Home
       </Link>
@@ -49,7 +49,7 @@ export default function LandingNavbarMobile() {
 
       {/* Get Started button (static, mirrors desktop) */}
       <div className="absolute bg-[#333] h-[30px] left-[301px] rounded-[15px] shadow-[0px_3px_8px_0px_rgba(0,0,0,0.25)] top-[13px] w-[76px] z-20" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[339px] not-italic text-[10px] text-center text-white top-[21px] whitespace-nowrap pointer-events-none z-20">
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt-solo leading-[normal] left-[339px] not-italic text-[10px] text-center text-white top-[21px] whitespace-nowrap pointer-events-none z-20">
         Get Started
       </p>
     </>

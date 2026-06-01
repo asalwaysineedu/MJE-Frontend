@@ -9,7 +9,7 @@ WORKDIR /app
 # Alpine + native 모듈(sharp 등) 호환성
 RUN apk add --no-cache libc6-compat
 
-COPY package.json package-lock.json* ./
+COPY package.json package-lock.json ./
 RUN npm ci --loglevel=error
 
 # ─────────────────────────────────────────────────────────────

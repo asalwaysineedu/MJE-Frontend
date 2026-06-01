@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import svgPaths from "@/landing/ui/components/assets/svgPaths";
@@ -19,7 +19,7 @@ export default function BottomCtaButton() {
 
       {/* Text */}
       <span
-        className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[25px] left-[137.535px] text-[20px] text-center text-white top-[22.19px] whitespace-nowrap pointer-events-none"
+        className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[25px] left-[137.535px] text-[20px] text-center text-white top-[22.19px] whitespace-nowrap pointer-events-none"
         style={{ fontVariationSettings: "'wght' 400" }}
       >
         데이트 코스 만들러가기

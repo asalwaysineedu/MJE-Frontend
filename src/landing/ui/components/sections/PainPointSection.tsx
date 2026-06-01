@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useEffect, useRef } from 'react';
 import type { RefObject } from 'react';
 import { imgIMockupIPhone14 } from "@/landing/ui/components/assets/images";
@@ -22,15 +22,15 @@ function PainCard({ number, title, subtitle, cardTop, animRef }: CardProps) {
         className="absolute inset-0 bg-white border-[#d9d9d9] border-[1.5px] border-solid rounded-[56.189px]"
         style={{ boxShadow: "0px 3px 15.6px 0px rgba(84,84,84,0.08)" }}
       />
-      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[51px] text-[#8aafe6] text-[40px] whitespace-nowrap"
+      <p className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[51px] text-[#8aafe6] text-[40px] whitespace-nowrap"
         style={{ top: 30.69, left: 29.5 }}>
         {number}
       </p>
-      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[51px] text-[#2a4874] text-[22px] whitespace-nowrap"
+      <p className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[51px] text-[#2a4874] text-[22px] whitespace-nowrap"
         style={{ top: 15.19, left: 98.23 }}>
         {title}
       </p>
-      <p className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[51px] text-[#7d7d7d] text-[16px] whitespace-nowrap"
+      <p className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[51px] text-[#7d7d7d] text-[16px] whitespace-nowrap"
         style={{ top: 46.19, left: 98.23 }}>
         {subtitle}
       </p>
@@ -41,7 +41,7 @@ function PainCard({ number, title, subtitle, cardTop, animRef }: CardProps) {
 function StressQuote() {
   return (
     <div
-      className="-translate-x-1/2 absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[32.064px] left-1/2 text-[#2d2e30] text-[21.862px] text-center top-[1603.96px] whitespace-nowrap"
+      className="-translate-x-1/2 absolute font-figma-prompt leading-[32.064px] left-1/2 text-[#2d2e30] text-[21.862px] text-center top-[1603.96px] whitespace-nowrap"
       style={{ fontVariationSettings: "'wght' 400" }}
     >
       <span>아직도 데이트코스 계획 때문에 </span>
@@ -105,7 +105,7 @@ export default function PainPointSection() {
         className="-translate-x-1/2 absolute bg-white h-[850px] left-[calc(50%-1.62px)] top-[847.99px] w-[1443.247px]"
       />
 
-      <div className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[0] left-[130px] text-[#2d2e30] text-[40px] top-[930.95px] whitespace-nowrap">
+      <div className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[0] left-[130px] text-[#2d2e30] text-[40px] top-[930.95px] whitespace-nowrap">
         <p className="leading-[51px] mb-0">혹시...</p>
         <p className="leading-[51px] mb-0">이런 대화,</p>
         <p className="leading-[51px]">해본 적 있죠?</p>

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 import type { RefObject } from "react";
@@ -93,13 +93,13 @@ export default function HotSpotSectionMobile() {
         data-hotspot-marker
       />
       <div
-        className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[0] left-[30px] text-[#2d2e30] text-[32px] top-[1854.47px] whitespace-nowrap"
+        className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[0] left-[30px] text-[#2d2e30] text-[32px] top-[1854.47px] whitespace-nowrap"
       >
         <p className="leading-[55px] mb-0 whitespace-pre">{`요즘 가장 핫한 코스만 `}</p>
         <p className="leading-[55px] whitespace-pre">쏙쏙 골라드려요 !</p>
       </div>
       <div
-        className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[0] left-1/2 text-[#6f7176] text-[13px] text-center top-[2447.29px] whitespace-nowrap"
+        className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt leading-[0] left-1/2 text-[#6f7176] text-[13px] text-center top-[2447.29px] whitespace-nowrap"
         style={{ fontVariationSettings: "'wght' 400" }}
       >
         <p className="leading-[21px] mb-0">실제 데행사가 추천하는 코스예요</p>

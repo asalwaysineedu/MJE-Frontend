@@ -1,4 +1,4 @@
-import svgPaths from "@/landing/ui/components/assets/svgPaths";
+﻿import svgPaths from "@/landing/ui/components/assets/svgPaths";
 import { imgHeroOverlay } from "@/landing/ui/components/assets/images";
 import HeroCtaButton from "@/landing/ui/components/sections/HeroCtaButton";
 
@@ -100,16 +100,16 @@ function StatEllipses() {
       </div>
       {/* Stats text */}
       <div className="[word-break:break-word] absolute contents leading-[normal] left-[1086.68px] not-italic text-center top-[305px] whitespace-nowrap">
-        <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] font-medium left-[1162.18px] text-[#273b62] text-[45px] top-[305px]">9,200+</p>
-        <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] left-[1162.18px] text-[#2d2e30] text-[14px] top-[366.16px]">생성된 코스</p>
+        <p className="-translate-x-1/2 absolute font-figma-pretendard font-medium left-[1162.18px] text-[#273b62] text-[45px] top-[305px]">9,200+</p>
+        <p className="-translate-x-1/2 absolute font-figma-pretendard left-[1162.18px] text-[#2d2e30] text-[14px] top-[366.16px]">생성된 코스</p>
       </div>
       <div className="[word-break:break-word] absolute contents leading-[normal] left-[1094.18px] not-italic text-center top-[427.89px] whitespace-nowrap">
-        <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] font-medium left-[1162.68px] text-[#644160] text-[45px] top-[427.89px]">10 Sec</p>
-        <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] left-[1164.83px] text-[#2d2e30] text-[14px] top-[488.89px]">코스 생성 평균 속도</p>
+        <p className="-translate-x-1/2 absolute font-figma-pretendard font-medium left-[1162.68px] text-[#644160] text-[45px] top-[427.89px]">10 Sec</p>
+        <p className="-translate-x-1/2 absolute font-figma-pretendard left-[1164.83px] text-[#2d2e30] text-[14px] top-[488.89px]">코스 생성 평균 속도</p>
       </div>
       <div className="[word-break:break-word] absolute contents leading-[normal] left-[1115.68px] not-italic text-[#2d2e30] text-center top-[550.62px] whitespace-nowrap">
-        <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] font-medium left-[1164.18px] text-[45px] top-[550.62px]">98%</p>
-        <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] left-[1162.18px] text-[14px] top-[611.79px]">만족도</p>
+        <p className="-translate-x-1/2 absolute font-figma-pretendard font-medium left-[1164.18px] text-[45px] top-[550.62px]">98%</p>
+        <p className="-translate-x-1/2 absolute font-figma-pretendard left-[1162.18px] text-[14px] top-[611.79px]">만족도</p>
       </div>
     </>
   );
@@ -174,7 +174,7 @@ function ScrollDownIndicator() {
             <path d={svgPaths.p1c3f1200} fill="#7A8290" />
           </svg>
         </span>
-        <p className="font-['Prompt:Regular',sans-serif] leading-none not-italic text-[#7a8290] text-[12.555px] whitespace-nowrap self-center">
+        <p className="font-figma-prompt-solo leading-none not-italic text-[#7a8290] text-[12.555px] whitespace-nowrap self-center">
           Scroll Down
         </p>
       </div>
@@ -196,20 +196,20 @@ export default function HeroSection() {
         <div className="absolute bg-[#d5e6f6] h-[13.861px] left-[135.99px] top-[254.12px] w-[310px]" />
         {/* Sub-copy under main heading — 각 줄 앞에 픽셀 하트 아이콘 */}
         <PixelHeart baseY={448.5} />
-        <p className="[word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[22px] left-[calc(50%-562.64px)] text-[#797979] text-[15px] top-[443.47px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+        <p className="[word-break:break-word] absolute font-figma-prompt leading-[22px] left-[calc(50%-562.64px)] text-[#797979] text-[15px] top-[443.47px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
           맛집·카페·놀거리까지 한 번에
         </p>
         <PixelHeart baseY={475.63} />
-        <p className="[word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[22px] left-[calc(50%-562.64px)] text-[#797979] text-[15px] top-[470.6px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+        <p className="[word-break:break-word] absolute font-figma-prompt leading-[22px] left-[calc(50%-562.64px)] text-[#797979] text-[15px] top-[470.6px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
           원하는 조건 3가지만 입력하면 데이트 준비 끝
         </p>
         {/* Highlighted phrase */}
-        <p className="[word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[22px] left-[135.99px] text-[#333] text-[20px] top-[246.12px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
+        <p className="[word-break:break-word] absolute font-figma-prompt leading-[22px] left-[135.99px] text-[#333] text-[20px] top-[246.12px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
           데이트코스 고민 30분, 이제 30초로 !
         </p>
         <HeroCtaButton />
         {/* Main heading */}
-        <div className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-semibold leading-[0] left-[calc(50%-590px)] not-italic text-[0px] text-black top-[292.11px] whitespace-nowrap">
+        <div className="[word-break:break-word] absolute font-figma-pretendard font-semibold leading-[0] left-[calc(50%-590px)] not-italic text-[0px] text-black top-[292.11px] whitespace-nowrap">
           <p className="leading-[normal] mb-0 text-[#2a4874] text-[40px]">데이트코스 계획이 어려운 커플들을 위한</p>
           <p className="leading-[normal] text-[#2d2e30] text-[64px]">가장 쉬운 데이트코스 플래닝</p>
         </div>

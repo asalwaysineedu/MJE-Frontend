@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 import { Group77 } from "./canvasParts";
@@ -54,11 +54,11 @@ export default function CtaSectionMobile() {
         data-cta-marker
       />
       <p
-        className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[55px] left-1/2 text-black text-[23px] text-center top-[3843.44px] whitespace-nowrap"
+        className="-translate-x-1/2 [word-break:break-word] absolute font-figma-pretendard font-medium leading-[55px] left-1/2 text-black text-[23px] text-center top-[3843.44px] whitespace-nowrap"
       >
         지금은 완벽한 데이트를 만들 시간!
       </p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt',sans-serif] leading-[25px] left-[calc(50%+0.5px)] not-italic text-[#656565] text-[16px] text-center top-[3898.44px] whitespace-nowrap">
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-figma-prompt-solo leading-[25px] left-[calc(50%+0.5px)] not-italic text-[#656565] text-[16px] text-center top-[3898.44px] whitespace-nowrap">
         Time to build your date!
       </p>
       <Group77 />

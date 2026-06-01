@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useRef } from "react";
 import type { RefObject } from "react";
@@ -23,14 +23,14 @@ function PainCardMobile({ number, title, subtitle, top, animRef }: CardProps) {
         className="absolute inset-0 bg-white border-[#d9d9d9] border-[0.749px] border-solid rounded-[28.075px]"
         style={{ boxShadow: "0px 1.5px 7.8px 0px rgba(84,84,84,0.08)" }}
       />
-      <p className="relative font-['Pretendard',sans-serif] font-medium text-[#8aafe6] text-[19.986px] whitespace-nowrap shrink-0 leading-none">
+      <p className="relative font-figma-pretendard font-medium text-[#8aafe6] text-[19.986px] whitespace-nowrap shrink-0 leading-none">
         {number}
       </p>
       <div className="relative flex flex-col gap-[3px]">
-        <p className="font-['Pretendard',sans-serif] font-medium text-[#2a4874] text-[10.992px] whitespace-nowrap leading-tight">
+        <p className="font-figma-pretendard font-medium text-[#2a4874] text-[10.992px] whitespace-nowrap leading-tight">
           {title}
         </p>
-        <p className="font-['Pretendard',sans-serif] font-medium text-[#7d7d7d] text-[7.995px] whitespace-nowrap leading-tight">
+        <p className="font-figma-pretendard font-medium text-[#7d7d7d] text-[7.995px] whitespace-nowrap leading-tight">
           {subtitle}
         </p>
       </div>
@@ -108,7 +108,7 @@ export default function PainPointSectionMobile() {
         ref={markerRef}
         className="-translate-x-1/2 absolute bg-white h-[874px] left-1/2 top-[874px] w-[402px]"
       />
-      <div className="[word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[0] left-[30px] text-[#2d2e30] text-[32px] top-[980.47px] whitespace-nowrap">
+      <div className="[word-break:break-word] absolute font-figma-pretendard font-medium leading-[0] left-[30px] text-[#2d2e30] text-[32px] top-[980.47px] whitespace-nowrap">
         <p className="leading-[40.101px] mb-0">혹시...</p>
         <p className="leading-[40.101px] mb-0">이런 대화,</p>
         <p className="leading-[40.101px]">해본 적 있죠?</p>
