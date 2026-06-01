@@ -10,12 +10,6 @@ import {
   imgRectangle716,
   imgRectangle717,
 } from "@/landing/ui/components/mobile/assets/images";
-import {
-  imgKakaoMap202605281332051,
-  imgKakaoMap202605281332053,
-  imgKakaoMap202605281332055,
-  imgKakaoMap202605281332057,
-} from "@/landing/ui/components/mobile/assets/svgImages";
 
 
 export function Group9() {
@@ -53,7 +47,7 @@ export function Group71() {
   return (
     <div className="-translate-x-1/2 absolute contents left-1/2 top-0">
       <div className="-translate-x-1/2 absolute h-[874px] left-1/2 top-0 w-[1544.393px]" data-name="자산 1@4x 1">
-        <img alt="" className="absolute inset-0 max-w-none mix-blend-overlay object-cover pointer-events-none size-full" src={imgHeroOverlay} />
+        <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full brightness-0 invert opacity-60" src={imgHeroOverlay} />
       </div>
     </div>
   );
@@ -70,22 +64,30 @@ export function Frame7() {
   );
 }
 
-export function Group() {
+const PIXEL_HEART_CELLS: ReadonlyArray<readonly [number, number]> = [
+  [1, 0], [3, 0],
+  [0, 1], [1, 1], [2, 1], [3, 1], [4, 1],
+  [1, 2], [2, 2], [3, 2],
+  [2, 3],
+];
+const PIXEL_CELL = 2.282;
+
+export function PixelHeart() {
   return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[2.28px] mt-0 relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-0 mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[2.28px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[2.28px] mt-[4.56px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[4.56px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[4.56px] mt-[4.56px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[4.56px] mt-[6.84px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[6.84px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[6.84px] mt-[4.56px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[9.13px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[6.84px] mt-0 relative row-1 size-[2.282px]" />
+    <div className="relative shrink-0" style={{ width: 5 * PIXEL_CELL, height: 4 * PIXEL_CELL }}>
+      {PIXEL_HEART_CELLS.map(([col, row], i) => (
+        <div
+          key={i}
+          className="absolute bg-[#fcad9e]"
+          style={{ width: PIXEL_CELL, height: PIXEL_CELL, left: col * PIXEL_CELL, top: row * PIXEL_CELL }}
+        />
+      ))}
     </div>
   );
+}
+
+export function Group() {
+  return <PixelHeart />;
 }
 
 export function Group1() {
@@ -108,21 +110,7 @@ export function Frame8() {
 }
 
 export function Group65() {
-  return (
-    <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0">
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[2.28px] mt-0 relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-0 mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[2.28px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[2.28px] mt-[4.56px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[4.56px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[4.56px] mt-[4.56px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[4.56px] mt-[6.84px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[6.84px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[6.84px] mt-[4.56px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[9.13px] mt-[2.28px] relative row-1 size-[2.282px]" />
-      <div className="bg-[#fcad9e] border-[#d5d5d5] border-[0.076px] border-solid col-1 ml-[6.84px] mt-0 relative row-1 size-[2.282px]" />
-    </div>
-  );
+  return <PixelHeart />;
 }
 
 export function Group10() {
@@ -208,16 +196,14 @@ export function Group16() {
 
 export function Group72() {
   return (
-    <div className="-translate-x-1/2 absolute contents left-1/2 top-[794.66px]">
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[215.42px] not-italic text-[#7a8290] text-[14.555px] text-center top-[794.66px] whitespace-nowrap">Scroll Down</p>
-      <div className="absolute flex inset-[18.18%_59.23%_81.4%_36.21%] items-center justify-center" style={{ containerType: "size" }}>
-        <div className="-rotate-45 flex-none h-[hypot(50cqw,50cqh)] w-[hypot(50cqw,-50cqh)]">
-          <div className="relative size-full" data-name="arrows_more_down">
-            <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.9381 12.9381">
-              <path d={svgPaths.p1c3f1200} fill="var(--fill-0, #7A8290)" id="arrows_more_down" />
-            </svg>
-          </div>
-        </div>
+    <div className="-translate-x-1/2 absolute left-1/2 top-[794.66px]">
+      <div className="animate-float-y flex items-center gap-[6px]">
+        <span className="flex items-center justify-center size-[11px] -rotate-45 shrink-0">
+          <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.9381 12.9381">
+            <path d={svgPaths.p1c3f1200} fill="#7A8290" />
+          </svg>
+        </span>
+        <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-none not-italic text-[#7a8290] text-[14.555px] whitespace-nowrap">Scroll Down</p>
       </div>
     </div>
   );
@@ -240,8 +226,8 @@ export function Frame14() {
 export function Frame12() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center leading-[normal] left-[274.36px] not-italic text-[#2d2e30] text-center top-[467.92px] w-[48px]">
-      <p className="font-['Pretendard:Medium',sans-serif] relative shrink-0 text-[22.012px] w-full">98%</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[7.337px] w-full">만족도</p>
+      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[22.012px] w-full">98%</p>
+      <p className="font-['Pretendard',sans-serif] relative shrink-0 text-[7.337px] w-full">만족도</p>
     </div>
   );
 }
@@ -271,8 +257,8 @@ export function Frame13() {
 export function Frame11() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center leading-[normal] left-[167.74px] not-italic text-center top-[467.96px] w-[67px]">
-      <p className="font-['Pretendard:Medium',sans-serif] relative shrink-0 text-[#644160] text-[22.012px] w-full">10 Sec</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">코스 생성 평균 속도</p>
+      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#644160] text-[22.012px] w-full whitespace-nowrap">10 Sec</p>
+      <p className="font-['Pretendard',sans-serif] relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">코스 생성 평균 속도</p>
     </div>
   );
 }
@@ -288,8 +274,8 @@ export function Group13() {
 export function Frame10() {
   return (
     <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[4px] items-center leading-[normal] left-[67.97px] not-italic text-center top-[467.92px] w-[74px]">
-      <p className="font-['Pretendard:Medium',sans-serif] relative shrink-0 text-[#273b62] text-[22.012px] w-full">3,200+</p>
-      <p className="font-['Pretendard:Regular',sans-serif] relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">생성된 코스</p>
+      <p className="font-['Pretendard',sans-serif] font-medium relative shrink-0 text-[#273b62] text-[22.012px] w-full">9,200+</p>
+      <p className="font-['Pretendard',sans-serif] relative shrink-0 text-[#2d2e30] text-[7.337px] w-full">생성된 코스</p>
     </div>
   );
 }
@@ -308,7 +294,7 @@ export function Group78() {
       <Group9 />
       <Group71 />
       <Frame7 />
-      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:SemiBold',sans-serif] leading-[0] left-1/2 not-italic text-[0px] text-black text-center top-[239.15px] whitespace-nowrap">
+      <div className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-semibold leading-[0] left-1/2 not-italic text-[0px] text-black text-center top-[239.15px] whitespace-nowrap">
         <p className="leading-[normal] mb-0 text-[#2a4874] text-[19.26px]">데이트코스 계획이 어려운 커플들을 위한</p>
         <p className="leading-[normal] text-[#2d2e30] text-[30.816px]">가장 쉬운 데이트코스 플래닝</p>
       </div>
@@ -319,17 +305,17 @@ export function Group78() {
       <Frame14 />
       <Group15 />
       <Frame13 />
-      <div className="absolute h-[25.1px] left-[53.43px] top-[464.27px] w-[14.536px]">
+      <div className="absolute h-[25.1px] left-[53.43px] top-[461.27px] w-[14.536px] animate-float-y" style={{ animationDelay: '0s' }}>
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 14.5355 25.1005">
           <path d={svgPaths.pcd35a80} fill="var(--fill-0, #FFC0FC)" id="Star 14" stroke="var(--stroke-0, #2D2E30)" strokeWidth="1.51167" />
         </svg>
       </div>
-      <div className="absolute h-[21.228px] left-[43.76px] top-[480.95px] w-[12.293px]">
+      <div className="absolute h-[21.228px] left-[43.76px] top-[477.95px] w-[12.293px] animate-float-y" style={{ animationDelay: '1.3s' }}>
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.2929 21.2278">
           <path d={svgPaths.p18393400} fill="var(--fill-0, white)" id="Star 15" stroke="var(--stroke-0, #2D2E30)" strokeWidth="1.51167" />
         </svg>
       </div>
-      <div className="absolute h-[21.439px] left-[339.52px] top-[441.52px] w-[12.415px]">
+      <div className="absolute h-[21.439px] left-[339.52px] top-[441.52px] w-[12.415px] animate-float-y" style={{ animationDelay: '0.7s' }}>
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 12.415 21.4386">
           <path d={svgPaths.p17df0880} fill="var(--fill-0, #ACCAF5)" id="Star 16" stroke="var(--stroke-0, #2D2E30)" strokeWidth="1.29113" />
         </svg>
@@ -526,7 +512,7 @@ export function Group23() {
 export function Group4() {
   return (
     <div className="absolute contents left-[277.71px] top-[2030.39px]">
-      <div className="absolute flex items-center justify-center left-[277.71px] size-[93.472px] top-[2030.39px]">
+      <div className="absolute flex items-center justify-center left-[277.71px] size-[93.472px] top-[2030.39px]" data-hotspot-group="0" style={{ filter: "drop-shadow(0px 2px 6px rgba(0,0,0,0.07))" }}>
         <div className="flex-none rotate-15">
           <div className="relative size-[76.32px]">
             <div className="absolute inset-[0.77%_0.69%_0.64%_0.77%]">
@@ -540,22 +526,22 @@ export function Group4() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[14.208px] items-center justify-center left-[305.17px] top-[2064.46px] w-[39.624px]">
+      <div className="absolute flex h-[14.208px] items-center justify-center left-[305.17px] top-[2064.46px] w-[39.624px]" data-hotspot-group="0">
         <div className="flex-none rotate-[4.74deg]">
-          <p className="[word-break:break-word] font-['Noto_Serif_Tamil_Slanted:Regular','Noto_Sans:Italic',sans-serif] h-[11.035px] italic leading-[normal] relative text-[6.564px] text-black tracking-[0.2626px] w-[38.845px]" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100, 'wght' 400" }}>
-            don’t worry
+          <p className="font-[‘Noto_Serif_Tamil_Slanted:Regular’,’Noto_Sans:Italic’,sans-serif] italic leading-none relative text-[6.564px] text-black tracking-[0.2626px] whitespace-nowrap" style={{ fontVariationSettings: "’CTGR’ 0, ‘wdth’ 100, ‘wght’ 400" }}>
+            don&apos;t worry
           </p>
         </div>
       </div>
-      <div className="absolute flex h-[14.244px] items-center justify-center left-[303.95px] top-[2075.27px] w-[40.064px]">
+      <div className="absolute flex h-[14.244px] items-center justify-center left-[303.95px] top-[2075.27px] w-[40.064px]" data-hotspot-group="0">
         <div className="flex-none rotate-[4.74deg]">
-          <p className="[word-break:break-word] font-['Noto_Serif_Tamil_Slanted:Regular','Noto_Sans:Italic',sans-serif] h-[11.035px] italic leading-[0] relative text-[0px] text-black w-[39.286px]" style={{ fontVariationSettings: "'CTGR' 0, 'wdth' 100, 'wght' 400" }}>
-            <span className="leading-[normal] text-[3.136px]">with</span>
-            <span className="leading-[normal] text-[6.564px]">{` Dehangsa`}</span>
+          <p className="font-['Noto_Sans:Italic',sans-serif] italic inline-flex items-baseline gap-[1px] text-black whitespace-nowrap leading-none">
+            <span className="text-[3.136px]">with</span>
+            <span className="text-[6.564px]">Dehangsa</span>
           </p>
         </div>
       </div>
-      <div className="absolute flex h-[2.087px] items-center justify-center left-[312.88px] top-[2063.55px] w-[25.17px]">
+      <div className="absolute flex h-[2.087px] items-center justify-center left-[312.88px] top-[2063.55px] w-[25.17px]" data-hotspot-group="0">
         <div className="flex-none rotate-[4.74deg]">
           <div className="h-0 relative w-[25.256px]">
             <div className="absolute inset-[-0.11px_0_0_0]">
@@ -566,7 +552,7 @@ export function Group4() {
           </div>
         </div>
       </div>
-      <div className="absolute flex h-[2.087px] items-center justify-center left-[310.75px] top-[2089.14px] w-[25.17px]">
+      <div className="absolute flex h-[2.087px] items-center justify-center left-[310.75px] top-[2089.14px] w-[25.17px]" data-hotspot-group="0">
         <div className="flex-none rotate-[4.74deg]">
           <div className="h-0 relative w-[25.256px]">
             <div className="absolute inset-[-0.11px_0_0_0]">
@@ -584,9 +570,9 @@ export function Group4() {
 export function MaskGroup() {
   return (
     <div className="absolute contents h-[47.705px] left-[135.22px] top-[2040.21px] w-[101.678px]" data-name="Mask group">
-      <div className="absolute flex h-[70.941px] items-center justify-center left-[121.95px] top-[2030px] w-[130.774px]">
+      <div className="absolute flex h-[47.705px] items-center justify-center left-[135.22px] top-[2040.21px] w-[101.678px]">
         <div className="flex-none rotate-[-1.99deg]">
-          <div className="h-[66.518px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[13.551px_10.489px] mask-size-[101.12px_47.147px] relative w-[128.542px]" style={{ maskImage: `url('${imgKakaoMap202605281332051}')` }} data-name="KakaoMap_20260528_133205 1">
+          <div className="h-[44.253px] overflow-hidden relative rounded-[8.182px] w-[100.202px]">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgKakaoMapA} />
           </div>
         </div>
@@ -702,7 +688,7 @@ export function Group34() {
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">해방촌</p>
         </div>
       </div>
-      <div className="absolute flex h-[5.552px] items-center justify-center left-[150.34px] top-[2124.24px] w-[16.164px]">
+      <div className="absolute flex h-[5.552px] items-center justify-center left-[150.34px] top-[2125.74px] w-[16.164px]">
         <div className="flex-none rotate-[-1.99deg]">
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">5~6시간</p>
         </div>
@@ -715,10 +701,8 @@ export function Group34() {
           </div>
         </div>
       </div>
-      <div className="absolute flex inset-[48.62%_63.24%_51.27%_35.5%] items-center justify-center" style={{ containerType: "size" }}>
-        <div className="flex-none h-[hypot(3.35702cqw,96.643cqh)] rotate-[-1.99deg] w-[hypot(96.643cqw,-3.35702cqh)]">
-          <AvgPace />
-        </div>
+      <div className="absolute" style={{ left: 144, top: 2127, width: 5, height: 5 }}>
+        <div className="rotate-[-1.99deg] size-full"><AvgPace /></div>
       </div>
       <div className="absolute flex h-[17.063px] items-center justify-center left-[152.03px] top-[2147.59px] w-[0.593px]">
         <div className="flex-none rotate-[88.01deg]">
@@ -752,9 +736,9 @@ export function Group39() {
 export function MaskGroup1() {
   return (
     <div className="absolute contents h-[59.559px] left-[34.12px] top-[2067.55px] w-[105.945px]" data-name="Mask group">
-      <div className="absolute flex h-[80.722px] items-center justify-center left-[23.1px] top-[2058.63px] w-[128.971px]">
+      <div className="absolute flex h-[59.559px] items-center justify-center left-[34.12px] top-[2067.55px] w-[105.945px]">
         <div className="flex-none rotate-[9.11deg]">
-          <div className="h-[62.414px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[12.204px_10.115px] mask-size-[103.563px_57.177px] relative w-[120.611px]" style={{ maskImage: `url('${imgKakaoMap202605281332053}')` }} data-name="KakaoMap_20260528_133205 1">
+          <div className="h-[44.253px] overflow-hidden relative rounded-[8.182px] w-[100.202px]">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgKakaoMapB} />
           </div>
         </div>
@@ -845,7 +829,7 @@ export function Group33() {
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">성수동</p>
         </div>
       </div>
-      <div className="absolute flex h-[7.47px] items-center justify-center left-[39.56px] top-[2150.05px] w-[16.59px]">
+      <div className="absolute flex h-[7.47px] items-center justify-center left-[39.56px] top-[2152px] w-[16.59px]">
         <div className="flex-none rotate-[9.11deg]">
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">4~5시간</p>
         </div>
@@ -858,10 +842,8 @@ export function Group33() {
           </div>
         </div>
       </div>
-      <div className="absolute flex inset-[49.16%_90.64%_50.71%_7.96%] items-center justify-center" style={{ containerType: "size" }}>
-        <div className="flex-none h-[hypot(-13.8186cqw,86.1814cqh)] rotate-[9.11deg] w-[hypot(86.1814cqw,13.8186cqh)]">
-          <AvgPace1 />
-        </div>
+      <div className="absolute" style={{ left: 33, top: 2152, width: 5, height: 5 }}>
+        <div className="rotate-[9.11deg] size-full"><AvgPace1 /></div>
       </div>
       <div className="absolute flex h-[16.858px] items-center justify-center left-[34.92px] top-[2172.74px] w-[2.703px]">
         <div className="flex-none rotate-[99.11deg]">
@@ -926,12 +908,12 @@ export function Group7() {
 export function Group8() {
   return (
     <div className="absolute contents h-[27.405px] left-[223.9px] top-[2123.23px] w-[67.594px]">
-      <div className="absolute flex h-[27.405px] items-center justify-center left-[223.9px] top-[2123.23px] w-[67.594px]">
+      <div className="absolute flex h-[27.405px] items-center justify-center left-[223.9px] top-[2123.23px] w-[67.594px]" data-hotspot-group="0" style={{ filter: "drop-shadow(0px 2px 6px rgba(0,0,0,0.07))" }}>
         <div className="flex-none rotate-[11.28deg]">
           <div className="bg-[#f7bdf7] h-[14.78px] relative rounded-[7.39px] w-[65.978px]" />
         </div>
       </div>
-      <div className="absolute flex h-[22.219px] items-center justify-center left-[228.27px] top-[2125.82px] w-[58.85px]">
+      <div className="absolute flex h-[22.219px] items-center justify-center left-[228.27px] top-[2125.82px] w-[58.85px]" data-hotspot-group="0">
         <div className="flex-none rotate-[11.28deg]">
           <Group7 />
         </div>
@@ -942,7 +924,7 @@ export function Group8() {
 
 export function Group41() {
   return (
-    <div className="absolute left-[92.72px] size-[62.745px] top-[2199.86px]">
+    <div className="absolute left-[92.72px] size-[62.745px] top-[2199.86px]" data-hotspot-group="3" style={{ filter: "drop-shadow(0px 2px 6px rgba(0,0,0,0.07))" }}>
       <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 62.7446 62.7454">
         <g id="Group 1171279971">
           <g id="Ellipse 37">
@@ -979,9 +961,9 @@ export function Group41() {
 export function MaskGroup2() {
   return (
     <div className="absolute contents h-[63.466px] left-[256.76px] top-[2152.66px] w-[107.046px]" data-name="Mask group">
-      <div className="absolute flex h-[88.46px] items-center justify-center left-[241.93px] top-[2139.61px] w-[135.442px]">
+      <div className="absolute flex h-[63.465px] items-center justify-center left-[256.76px] top-[2152.65px] w-[107.046px]">
         <div className="flex-none rotate-[-11.58deg]">
-          <div className="h-[64.686px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[16.304px_14.515px] mask-size-[104.097px_60.517px] relative w-[125.002px]" style={{ maskImage: `url('${imgKakaoMap202605281332055}')` }} data-name="KakaoMap_20260528_133205 1">
+          <div className="h-[44.253px] overflow-hidden relative rounded-[8.182px] w-[100.202px]">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgKakaoMapC} />
           </div>
         </div>
@@ -1087,7 +1069,7 @@ export function Group35() {
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">연남동</p>
         </div>
       </div>
-      <div className="absolute flex h-[8.11px] items-center justify-center left-[285.18px] top-[2247.01px] w-[16.678px]">
+      <div className="absolute flex h-[8.11px] items-center justify-center left-[285.18px] top-[2247.81px] w-[16.678px]">
         <div className="flex-none rotate-[-11.58deg]">
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">4~5시간</p>
         </div>
@@ -1100,10 +1082,8 @@ export function Group35() {
           </div>
         </div>
       </div>
-      <div className="absolute flex inset-[51.5%_29.47%_48.37%_69.08%] items-center justify-center" style={{ containerType: "size" }}>
-        <div className="flex-none h-[hypot(17.005cqw,82.995cqh)] rotate-[-11.58deg] w-[hypot(82.995cqw,-17.005cqh)]">
-          <AvgPace2 />
-        </div>
+      <div className="absolute" style={{ left: 278, top: 2253, width: 5, height: 5 }}>
+        <div className="rotate-[-11.58deg] size-full"><AvgPace2 /></div>
       </div>
       <div className="absolute flex h-[16.726px] items-center justify-center left-[290.64px] top-[2272.41px] w-[3.427px]">
         <div className="flex-none rotate-[78.42deg]">
@@ -1137,9 +1117,9 @@ export function Group38() {
 export function MaskGroup3() {
   return (
     <div className="absolute contents h-[54.029px] left-[162.97px] top-[2180.72px] w-[104.117px]" data-name="Mask group">
-      <div className="absolute flex h-[67.648px] items-center justify-center left-[158.2px] top-[2174.97px] w-[115.189px]">
+      <div className="absolute flex h-[54.029px] items-center justify-center left-[162.97px] top-[2180.72px] w-[104.117px]">
         <div className="flex-none rotate-[5.73deg]">
-          <div className="h-[56.952px] mask-alpha mask-intersect mask-no-clip mask-no-repeat mask-position-[5.544px_6.519px] mask-size-[102.567px_52.479px] relative w-[110.056px]" style={{ maskImage: `url('${imgKakaoMap202605281332057}')` }} data-name="KakaoMap_20260528_133205 1">
+          <div className="h-[44.253px] overflow-hidden relative rounded-[8.182px] w-[100.202px]">
             <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgKakaoMapD} />
           </div>
         </div>
@@ -1255,7 +1235,7 @@ export function Group36() {
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#2d2e30] text-[4.773px] text-center whitespace-nowrap">서촌</p>
         </div>
       </div>
-      <div className="absolute flex h-[6.571px] items-center justify-center left-[170.98px] top-[2263.12px] w-[16.419px]">
+      <div className="absolute flex h-[6.571px] items-center justify-center left-[170.98px] top-[2264.12px] w-[16.419px]">
         <div className="flex-none rotate-[5.73deg]">
           <p className="[word-break:break-word] font-['Inter:Regular','Noto_Sans_KR:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-[#707070] text-[4.091px] whitespace-nowrap">5~6시간</p>
         </div>
@@ -1268,10 +1248,8 @@ export function Group36() {
           </div>
         </div>
       </div>
-      <div className="absolute flex inset-[51.76%_58.02%_48.12%_40.64%] items-center justify-center" style={{ containerType: "size" }}>
-        <div className="flex-none h-[hypot(-9.11269cqw,90.8873cqh)] rotate-[5.73deg] w-[hypot(90.8873cqw,9.11269cqh)]">
-          <AvgPace3 />
-        </div>
+      <div className="absolute" style={{ left: 164, top: 2264.2, width: 5, height: 5 }}>
+        <div className="rotate-[5.73deg] size-full"><AvgPace3 /></div>
       </div>
       <div className="absolute flex h-[16.988px] items-center justify-center left-[168.39px] top-[2285.93px] w-[1.703px]">
         <div className="flex-none rotate-[95.73deg]">
@@ -1306,11 +1284,9 @@ export function Group79() {
   return (
     <div className="-translate-x-1/2 absolute contents left-1/2 top-[2030.39px]">
       <Group4 />
-      <Group39 />
-      <Group40 />
       <Group8 />
       <Group41 />
-      <div className="absolute h-[17.063px] left-[86.12px] top-[2051.66px] w-[41.051px]" data-name="Union">
+      <div className="absolute h-[17.063px] left-[86.12px] top-[2051.66px] w-[41.051px]" data-name="Union" data-hotspot-group="1" style={{ filter: "drop-shadow(0px 2px 6px rgba(0,0,0,0.07))" }}>
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 41.0508 17.063">
           <g id="Union">
             <mask fill="white" id="path-1-inside-1_1_791">
@@ -1321,10 +1297,8 @@ export function Group79() {
           </g>
         </svg>
       </div>
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[91.26px] not-italic text-[6.314px] text-black top-[2053.88px] whitespace-nowrap">Hot Spot !</p>
-      <Group38 />
-      <Group37 />
-      <div className="absolute h-[19.278px] left-[248.61px] top-[2311.19px] w-[49.056px]" data-name="Union">
+      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[91.26px] not-italic text-[6.314px] text-black top-[2053.88px] whitespace-nowrap" data-hotspot-group="1">Hot Spot !</p>
+      <div className="absolute h-[19.278px] left-[248.61px] top-[2311.19px] w-[49.056px]" data-name="Union" data-hotspot-group="4" style={{ filter: "drop-shadow(0px 2px 6px rgba(0,0,0,0.07))" }}>
         <svg className="absolute block inset-0 size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 49.0557 19.2783">
           <g id="Union">
             <mask fill="white" id="path-1-inside-1_1_723">
@@ -1335,7 +1309,7 @@ export function Group79() {
           </g>
         </svg>
       </div>
-      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[253.67px] not-italic text-[6.424px] text-black top-[2318.37px] whitespace-nowrap">Time to Heal</p>
+      <p className="[word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[normal] left-[253.67px] not-italic text-[6.424px] text-black top-[2318.37px] whitespace-nowrap" data-hotspot-group="4">Time to Heal</p>
     </div>
   );
 }
@@ -1420,7 +1394,7 @@ export function Group73() {
   return (
     <div className="absolute contents left-[29.8px] top-[2904.39px]">
       <div className="absolute bg-white border-[#2d2e30] border-[0.612px] border-solid h-[89.225px] left-[29.8px] rounded-[56.475px] shadow-[0px_1.223px_10.642px_0px_rgba(0,0,0,0.03)] top-[2904.39px] w-[187.788px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Medium',sans-serif] leading-[15.291px] left-[123.37px] not-italic text-[#2a4874] text-[12.233px] text-center top-[2924.25px] whitespace-nowrap">장소입력</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[15.291px] left-[123.37px] not-italic text-[#2a4874] text-[12.233px] text-center top-[2924.25px] whitespace-nowrap">장소입력</p>
       <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[15.291px] left-[123.36px] text-[#3e3e3e] text-[8.563px] text-center top-[2944.4px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         동네·역 이름만 입력해요
         <br aria-hidden />
@@ -1660,7 +1634,7 @@ export function Group75() {
       <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[15.291px] left-[123.46px] text-[#3e3e3e] text-[8.563px] text-center top-[3188.72px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         도보 or 대중교통 or 자차 중에 선택해요
       </p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Medium',sans-serif] leading-[15.291px] left-[123.63px] not-italic text-[#2a4874] text-[12.233px] text-center top-[3164.59px] whitespace-nowrap">이동방식 선택</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[15.291px] left-[123.63px] not-italic text-[#2a4874] text-[12.233px] text-center top-[3164.59px] whitespace-nowrap">이동방식 선택</p>
       <div className="absolute flex h-[28.109px] items-center justify-center left-[46.85px] top-[3152.45px] w-[25.234px]">
         <div className="flex-none rotate-[15.4deg]">
           <HandDrawnCircle2 />
@@ -1906,7 +1880,7 @@ export function Group74() {
       <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular','Noto_Sans_KR:Regular',sans-serif] leading-[15.291px] left-[calc(50%+78.09px)] text-[#3e3e3e] text-[8.563px] text-center top-[3041.3px] whitespace-nowrap" style={{ fontVariationSettings: "'wght' 400" }}>
         언제 만나는지 선택해요
       </p>
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard:Medium',sans-serif] leading-[15.291px] left-[calc(50%+77.77px)] not-italic text-[#2a4874] text-[12.233px] text-center top-[3017.17px] whitespace-nowrap">시간대 선택</p>
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Pretendard',sans-serif] font-medium leading-[15.291px] left-[calc(50%+77.77px)] not-italic text-[#2a4874] text-[12.233px] text-center top-[3017.17px] whitespace-nowrap">시간대 선택</p>
       <div className="absolute flex h-[28.109px] items-center justify-center left-[203.86px] top-[3004.35px] w-[25.234px]">
         <div className="flex-none rotate-[15.4deg]">
           <HandDrawnCircle4 />
@@ -1931,8 +1905,8 @@ export function Group80() {
 export function Group61() {
   return (
     <div className="absolute contents left-[209.26px] top-[3779.5px]">
-      <div className="absolute bg-[#dbecfe] h-[37.677px] left-[209.26px] rounded-[7.445px] top-[3779.5px] w-[154.419px]" />
-      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[18.612px] left-[286.18px] not-italic text-[17.867px] text-black text-center top-[3789.03px] whitespace-nowrap">Pop-up Stores</p>
+      <div className="absolute bg-[#dbecfe] h-[37.677px] left-[209.26px] rounded-[7.445px] top-[3779.5px] w-[154.419px]" data-cta-tag="4" />
+      <p className="-translate-x-1/2 [word-break:break-word] absolute font-['Prompt:Regular',sans-serif] leading-[18.612px] left-[286.18px] not-italic text-[17.867px] text-black text-center top-[3789.03px] whitespace-nowrap" data-cta-tag="4">Pop-up Stores</p>
     </div>
   );
 }
@@ -1940,12 +1914,12 @@ export function Group61() {
 export function Group62() {
   return (
     <div className="absolute contents h-[58.965px] left-[253.62px] top-[3725.44px] w-[113.109px]">
-      <div className="absolute flex h-[58.965px] items-center justify-center left-[253.62px] top-[3725.44px] w-[113.109px]">
+      <div className="absolute flex h-[58.965px] items-center justify-center left-[253.62px] top-[3725.44px] w-[113.109px]" data-cta-tag="1">
         <div className="flex-none rotate-[11.84deg]">
           <div className="bg-[#f9ddf6] h-[37.677px] relative rounded-[7.445px] w-[107.669px]" />
         </div>
       </div>
-      <div className="-translate-x-1/2 absolute flex h-[36.035px] items-center justify-center left-[312.02px] top-[3737.49px] w-[87.09px]">
+      <div className="-translate-x-1/2 absolute flex h-[36.035px] items-center justify-center left-[312.02px] top-[3737.49px] w-[87.09px]" data-cta-tag="1">
         <div className="flex-none rotate-[11.84deg]">
           <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Hot Spots</p>
         </div>
@@ -1957,12 +1931,12 @@ export function Group62() {
 export function Group64() {
   return (
     <div className="absolute contents h-[52.636px] left-[176.27px] top-[3690.81px] w-[111.853px]">
-      <div className="absolute flex h-[52.636px] items-center justify-center left-[176.27px] top-[3690.81px] w-[111.853px]">
+      <div className="absolute flex h-[52.636px] items-center justify-center left-[176.27px] top-[3690.81px] w-[111.853px]" data-cta-tag="0">
         <div className="flex-none rotate-[-7.63deg]">
           <div className="bg-[#cae594] h-[38.677px] relative rounded-[7.445px] w-[107.669px]" />
         </div>
       </div>
-      <div className="-translate-x-1/2 absolute flex h-[24.379px] items-center justify-center left-[232.24px] top-[3705.13px] w-[40.254px]">
+      <div className="-translate-x-1/2 absolute flex h-[24.379px] items-center justify-center left-[232.24px] top-[3705.13px] w-[40.254px]" data-cta-tag="0">
         <div className="flex-none rotate-[-7.63deg]">
           <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] h-[19.504px] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center w-[38px]">Park</p>
         </div>
@@ -1984,12 +1958,12 @@ export function Group63() {
 export function Group66() {
   return (
     <div className="absolute contents h-[69.941px] left-[89.58px] top-[3749.64px] w-[135.097px]">
-      <div className="absolute flex h-[69.941px] items-center justify-center left-[89.58px] top-[3749.64px] w-[135.097px]">
+      <div className="absolute flex h-[69.941px] items-center justify-center left-[89.58px] top-[3749.64px] w-[135.097px]" data-cta-tag="3">
         <div className="flex-none rotate-[-14.98deg]">
           <div className="bg-[#ffe9ca] h-[37.677px] relative rounded-[7.445px] w-[129.768px]" />
         </div>
       </div>
-      <div className="-translate-x-1/2 absolute flex h-[45.238px] items-center justify-center left-[158.87px] top-[3761.72px] w-[105.377px]">
+      <div className="-translate-x-1/2 absolute flex h-[45.238px] items-center justify-center left-[158.87px] top-[3761.72px] w-[105.377px]" data-cta-tag="3">
         <div className="flex-none rotate-[-14.98deg]">
           <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Cocktail Bar</p>
         </div>
@@ -2001,12 +1975,12 @@ export function Group66() {
 export function Group67() {
   return (
     <div className="absolute contents h-[44.346px] left-[35.27px] top-[3733.33px] w-[109.817px]">
-      <div className="absolute flex h-[44.346px] items-center justify-center left-[35.27px] top-[3733.33px] w-[109.817px]">
+      <div className="absolute flex h-[44.346px] items-center justify-center left-[35.27px] top-[3733.33px] w-[109.817px]" data-cta-tag="2">
         <div className="flex-none rotate-[3.59deg]">
           <div className="bg-[#ffce77] h-[37.677px] relative rounded-[7.445px] w-[107.669px]" />
         </div>
       </div>
-      <div className="-translate-x-1/2 absolute flex h-[24.474px] items-center justify-center left-[89.87px] top-[3743.44px] w-[89.017px]">
+      <div className="-translate-x-1/2 absolute flex h-[24.474px] items-center justify-center left-[89.87px] top-[3743.44px] w-[89.017px]" data-cta-tag="2">
         <div className="flex-none rotate-[3.59deg]">
           <p className="[word-break:break-word] font-['Prompt:Regular',sans-serif] leading-[18.612px] not-italic relative text-[17.867px] text-black text-center whitespace-nowrap">Cozy Cafe</p>
         </div>

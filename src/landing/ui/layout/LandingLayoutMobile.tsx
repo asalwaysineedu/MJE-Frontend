@@ -29,10 +29,10 @@ export default function LandingLayoutMobile({ children, height }: Props) {
   }, []);
 
   return (
-    <div className="relative w-full overflow-x-hidden bg-white flex justify-center">
+    <div className="relative w-full overflow-x-hidden bg-white flex justify-center scrollbar-hide">
       <div ref={animRef}>
         <div
-          className="relative bg-white"
+          className="relative bg-white overflow-hidden"
           style={{ width: CANVAS_WIDTH, height }}
         >
           {children}

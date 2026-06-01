@@ -6,7 +6,6 @@ import HotSpotSection from "@/landing/ui/components/sections/HotSpotSection";
 import TimeToHealSection from "@/landing/ui/components/sections/TimeToHealSection";
 import CtaSection from "@/landing/ui/components/sections/CtaSection";
 import SectionReveal from "@/landing/ui/components/SectionReveal";
-import LandingNavbarMobile from "@/landing/ui/components/mobile/sections/LandingNavbarMobile";
 import HeroSectionMobile from "@/landing/ui/components/mobile/sections/HeroSectionMobile";
 import PainPointSectionMobile from "@/landing/ui/components/mobile/sections/PainPointSectionMobile";
 import HotSpotSectionMobile from "@/landing/ui/components/mobile/sections/HotSpotSectionMobile";
@@ -39,11 +38,13 @@ export default function LandingPage() {
       {/* Mobile (< 768px) */}
       <div className="md:hidden">
         <LandingLayoutMobile height={4310}>
-          <LandingNavbarMobile />
           <HeroSectionMobile />
           <PainPointSectionMobile />
+          <SectionReveal top={1748} height={450} color="#ffffff" width={393} />
           <HotSpotSectionMobile />
+          <SectionReveal top={2622} height={450} color="#f5f5f5" width={393} />
           <TimeToHealSectionMobile />
+          <SectionReveal top={3397} height={450} color="#ffffff" width={393} />
           <CtaSectionMobile />
         </LandingLayoutMobile>
       </div>
