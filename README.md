@@ -45,7 +45,8 @@
 
 - **개발 기간**: 2026.03 ~ 진행 중
 - **배포 환경**: Docker(standalone) 기반 컨테이너 배포 · `:3000`
-- **배포 주소**: _배포 준비 중_
+- **배포 주소**: [https://www.dehangsa.com](https://www.dehangsa.com)
+
 
 <br/>
 
