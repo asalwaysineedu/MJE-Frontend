@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import ConditionalHeader from "@/home/ui/layout/ConditionalHeader";
+import DwellTimeTracker from "@/dwell_time/ui/DwellTimeTracker";
 import {
   GoogleTagManagerNoScript,
   GoogleTagManagerScript,
@@ -38,6 +39,7 @@ export default function RootLayout({
         <GoogleTagManagerScript />
       </head>
       <body>
+        <DwellTimeTracker />
         <GoogleTagManagerNoScript />
         <ConditionalHeader />
         {children}
