@@ -40,3 +40,6 @@ next-env.d.ts
 
 # Claude Code (contains secrets)
 .claude/settings.json
+
+# exclude idea
+.idea
