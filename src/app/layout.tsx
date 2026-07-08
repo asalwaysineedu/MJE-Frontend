@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import ConditionalHeader from "@/home/ui/layout/ConditionalHeader";
+import DwellTimeTracker from "@/dwell_time/ui/DwellTimeTracker";
 
 export const metadata: Metadata = {
   title: "Dehangsa",
@@ -31,6 +32,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        <DwellTimeTracker />
         <ConditionalHeader />
         {children}
       </body>
