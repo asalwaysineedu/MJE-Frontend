@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import ConditionalHeader from "@/home/ui/layout/ConditionalHeader";
 import DwellTimeTracker from "@/dwell_time/ui/DwellTimeTracker";
+import {
+  GoogleTagManagerNoScript,
+  GoogleTagManagerScript,
+} from "@/infrastructure/analytics/GoogleTagManager";
 
 export const metadata: Metadata = {
   title: "Dehangsa",
@@ -31,8 +35,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <GoogleTagManagerScript />
+      </head>
       <body>
         <DwellTimeTracker />
+        <GoogleTagManagerNoScript />
         <ConditionalHeader />
         {children}
       </body>
