@@ -14,6 +14,7 @@ validateEnv();
 
 export const clientEnv = {
   apiBaseUrl: process.env.NEXT_PUBLIC_API_BASE_URL as string,
+  gtmId: process.env.NEXT_PUBLIC_GTM_ID,
 };
 
 export const serverEnv = {};
