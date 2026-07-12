@@ -4,17 +4,13 @@ import HomeTab from "@/home/ui/components/home_tab/HomeTab";
 
 export default function Header() {
   return (
-    <header
-      className="w-full flex items-center justify-between px-4 md:px-8 lg:px-[50px] border-b-[1.5px] border-[#d7d7d7] bg-white h-[52px] md:h-[73.622px]"
-    >
-      {/* Left: logo + nav */}
-      <div className="flex items-center gap-4 md:gap-10 lg:gap-[97px]">
+    <header className="w-full flex items-center px-5 md:px-8 lg:px-[50px] bg-[#FAFAF8] h-[68px] md:h-[68px]">
+      <div className="w-full h-full flex justify-between items-center">
         <Logo />
-        <nav className="flex items-center gap-4 md:gap-6 lg:w-[170.66px] lg:justify-between">
+        <nav className="h-full flex items-center gap-4 md:gap-6 lg:w-[170.66px] lg:justify-between">
           <HomeTab />
         </nav>
       </div>
-
     </header>
   );
 }
