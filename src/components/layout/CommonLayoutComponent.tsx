@@ -1,4 +1,5 @@
 import type { CSSProperties, ReactNode } from "react";
+import CommonHeaderComponent from "@/components/layout/CommonHeaderComponent";
 
 export interface BlobConfig {
   className: string;
@@ -25,6 +26,8 @@ interface CommonLayoutComponentProps {
   containerClassName?: string;
   /** <main> 태그에 적용할 클래스 */
   mainClassName?: string;
+  /** 공용 헤더 노출 여부. 기본 true */
+  header?: boolean;
 }
 
 export default function CommonLayoutComponent({
@@ -32,13 +35,17 @@ export default function CommonLayoutComponent({
   blobs = DEFAULT_BLOBS,
   containerClassName = "relative z-10",
   mainClassName = "relative min-h-screen overflow-hidden bg-white",
+  header = true,
 }: CommonLayoutComponentProps) {
   return (
-    <main className={mainClassName}>
-      {blobs.map((blob, i) => (
-        <div key={i} className={blob.className} style={blob.style} />
-      ))}
-      <div className={containerClassName}>{children}</div>
-    </main>
+    <>
+      {header && <CommonHeaderComponent />}
+      <main className={mainClassName}>
+        {blobs.map((blob, i) => (
+          <div key={i} className={blob.className} style={blob.style} />
+        ))}
+        <div className={containerClassName}>{children}</div>
+      </main>
+    </>
   );
 }
