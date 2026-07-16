@@ -34,11 +34,11 @@ export default function CommonLayoutComponent({
   children,
   blobs = DEFAULT_BLOBS,
   containerClassName = "relative z-10",
-  mainClassName = "relative min-h-screen overflow-hidden bg-white",
+  mainClassName = "relative flex-1 overflow-hidden bg-white",
   header = true,
 }: CommonLayoutComponentProps) {
   return (
-    <>
+    <div className="flex flex-col min-h-dvh">
       {header && <CommonHeaderComponent />}
       <main className={mainClassName}>
         {blobs.map((blob, i) => (
@@ -46,6 +46,6 @@ export default function CommonLayoutComponent({
         ))}
         <div className={containerClassName}>{children}</div>
       </main>
-    </>
+    </div>
   );
 }

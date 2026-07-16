@@ -10,7 +10,7 @@ export default function Logo() {
   return (
     <Link href="/home" aria-label="홈으로 이동" onClick={handleLogoClick}>
       <Image
-        src="/logo.png"
+        src="/common-images/logo.png"
         alt="dahangsa"
         width={120}
         height={24}

@@ -10,8 +10,8 @@ export const metadata: Metadata = {
   title: "Dehangsa",
   description: "Dehangsa",
   icons: {
-    icon: "/icon.png",
-    apple: "/icon.png",
+    icon: "/common-images/icon.png",
+    apple: "/common-images/icon.png",
   },
   verification: {
     google: "WbSW1E5j3I0d7rw850rgtcRIW7sJyu0Tj8qm7IaIE78",
@@ -38,7 +38,7 @@ export default function RootLayout({
         <GoogleTagManagerScript />
       </head>
       <body>
-        <DwellTimeTracker />
+        {/* <DwellTimeTracker /> */}
         <GoogleTagManagerNoScript />
         {children}
       </body>
